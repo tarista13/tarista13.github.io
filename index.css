@@ -287,7 +287,7 @@ h4 {
 }
 
 .brickBreaker-image {
-  padding-top: 8%;
+  padding-top: 15%;
   width: 50%;
 }
 
@@ -391,11 +391,11 @@ h4 {
     border-radius: 8px;
     border: 1px solid;
     font-family: "Inconsolata", monospace;
-    font-size: 18px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 15px;
-    padding-right: 15px;
+    font-size: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
   }
 
   /*About Section*/
@@ -432,7 +432,7 @@ h4 {
   }
 
   /*Experience Section*/
-  
+
   h3,
   h4 {
     margin-top: 5px;
@@ -445,15 +445,54 @@ h4 {
     border: 5px solid magenta;
   }
 
+  .mobile-experience-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 5px solid magenta;
+  }
+
+  .experience-right-description {
+    order: 2;
+    border: 5px solid blue;
+    width: 100%;
+    margin-right: 130px;
+  }
+
   .experience-job-title-steelcase {
     margin-left: 120px;
     align-items: center;
   }
 
   .experience-job-title-elevate {
-    margin-left: 5px;
-    align-items: center;
+    border: 5px solid green;
   }
+
+  .experience-job-elevate,
+.experience-date-elevate,
+.experience-city-elevate {
+  border: 5px solid red; /* Adjust as per your styling */
+  text-align: left; /* Align the text with the container */
+  display: block;
+  white-space: nowrap; /* Keep text on a single line */
+  width: calc(100% - 260px); /* Adjust width based on margins */
+  margin: 0 auto; /* Center the text */
+  overflow: visible; /* Allow text to overflow but remain on one line */
+}
+
+.experience-job-elevate{
+    padding-right: 210px;
+}
+
+.experience-date-elevate {
+    padding-right: 50px;
+}
+
+.experience-city-elevate {
+    padding-right: 80px;
+}
+
 
   .experience-job-title-strikes {
     margin-left: 120px;
@@ -485,6 +524,13 @@ h4 {
     display: inline-block;
     vertical-align: top;
     border: 5px solid black;
+    margin-bottom: 10px;
+  }
+
+  .experience-description-elevate {
+    margin-left: 0;
+    text-align: center;
+    border: 5px solid orange;
   }
 
   .mobile-experience-image-container-strikes {
@@ -493,7 +539,6 @@ h4 {
     border: 5px solid black;
   }
 
-
   .mobile-experience-steelcase {
     width: 100%;
     border: 5px solid red;
@@ -501,6 +546,7 @@ h4 {
 
   .mobile-experience-elevate {
     width: 100%;
+    padding-right: 20px;
     border: 5px solid red;
   }
 
@@ -508,7 +554,6 @@ h4 {
     width: 100%;
     border: 5px solid red;
   }
-
 
   /*Projects Section*/
   .projects {
@@ -533,16 +578,16 @@ h4 {
     width: 60%;
     border-radius: 4px;
   }
-  
+
   .screenShot-image {
     width: 35%;
     border-radius: 10px;
   }
-  
+
   .website-image {
     width: 75%;
   }
-  
+
   .game-image {
     width: 75%;
   }
