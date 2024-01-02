@@ -6,7 +6,7 @@ h3,
 h4,
 p,
 li {
-    font-family: "Inconsolata", monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 /*Intro Section*/
@@ -211,7 +211,7 @@ h4 {
 }
 
 .mobile-experience-steelcase {
-    display: none;
+  display: none;
 }
 
 .experience-left-strikes {
@@ -227,8 +227,8 @@ h4 {
 }
 
 .experience-left-description {
-  left: -4rem;
-  margin-right: -3rem;
+  left: 2rem;
+  padding-right: 35px;
   width: fit-content;
   position: relative;
   top: 60%;
@@ -272,8 +272,9 @@ h4 {
 }
 
 .experience-right-description {
-  right: -4rem;
-  margin-left: -3rem;
+  margin-left: 6rem;
+  padding-left: 10px;
+  padding-right: 10px;
   width: fit-content;
   position: relative;
   top: 60%;
@@ -299,8 +300,8 @@ h4 {
 }
 
 .project-info-title {
-    font-weight: 800;
-    font-size: 22px;
+  font-weight: 800;
+  font-size: 22px;
 }
 
 .project-info-title,
@@ -497,7 +498,30 @@ h4 {
     text-align: center;
   }
 
+  .experience-left-description {
+    left: -2rem;
+    margin-right: -1rem;
+    width: fit-content;
+    position: relative;
+    top: 60%;
+    height: fit-content;
+    margin: 0;
+    box-sizing: inherit;
+    padding-top: 5%;
+    color: white;
+  }
+
   .experience-right-description {
+    right: -4rem;
+    margin-left: -3rem;
+    width: fit-content;
+    position: relative;
+    top: 60%;
+    height: fit-content;
+    padding-top: 5%;
+    margin: 0;
+    box-sizing: inherit;
+    color: white;
     order: 2;
     width: 100%;
     margin-right: 130px;
@@ -577,6 +601,7 @@ h4 {
   .mobile-experience-image-container-strikes {
     background-color: transparent;
     text-align: center;
+    padding-left: 60px;
   }
 
   .experience-left-steelcase {
