@@ -1,5 +1,13 @@
 body {
-  background-color: rgb(15, 15, 15);
+  background-color: rgb(15, 15, 15) !important;
+}
+
+.navbar {
+  background-color: rgb(56, 55, 55) !important;
+}
+
+.nav-link {
+  color: white !important;
 }
 
 h3,
@@ -9,6 +17,7 @@ li {
   font-family: "Inconsolata", monospace;
 }
 
+
 /*Intro Section*/
 .intro-lettering {
   text-align: center;
@@ -16,11 +25,12 @@ li {
   font-weight: 500;
   font-size: 45px;
   padding-top: 200px;
-  padding-bottom: 300px;
+  padding-bottom: 140px;
+  margin-left: 5px;
   color: white;
 }
 
-.intro-button {
+#introButton {
   color: red;
   border-color: red;
   border-radius: 8px;
@@ -47,6 +57,7 @@ li {
 1. Need to figure out how to fix tech-image div to just wrap image*/
 
 .about-title,
+.education-title,
 .projects-title,
 .project-title,
 .experience-title,
@@ -73,11 +84,12 @@ li {
   width: 45%;
   justify-content: center;
   border-radius: 12%;
+  margin-bottom: 25px;
 }
 
 .personal-description {
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 15%;
+  padding-right: 15%;
   color: white;
 }
 
@@ -167,14 +179,14 @@ h4 {
   color: white;
 }
 
-.experience-left {
+.education-left {
   position: relative;
   display: flex;
   box-sizing: inherit;
   padding-bottom: 8%;
 }
 
-.experience-left-image-container-steelcase {
+.education-left-image-container-calvin {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -186,19 +198,7 @@ h4 {
   position: relative;
 }
 
-.experience-left-image-container-strikes {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  margin: 0;
-  box-sizing: inherit;
-  background-color: rgb(30, 215, 96);
-  padding-top: 25%;
-  position: relative;
-}
-
-.experience-left-steelcase {
+.education-left-calvin {
   position: absolute;
   top: 50%;
   left: 60%;
@@ -210,23 +210,11 @@ h4 {
   box-sizing: border-box;
 }
 
-.mobile-experience-steelcase {
+.mobile-education-calvin {
   display: none;
 }
 
-.experience-left-strikes {
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-80%, -50%);
-  max-width: 50%;
-  width: auto;
-  height: auto;
-  box-sizing: border-box;
-  border-radius: 15px;
-}
-
-.experience-left-description {
+.education-left-description {
   left: 2rem;
   padding-right: 35px;
   width: fit-content;
@@ -239,7 +227,7 @@ h4 {
   color: white;
 }
 
-.experience-right {
+.education-right {
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -248,7 +236,7 @@ h4 {
   padding-bottom: 8%;
 }
 
-.experience-right-image-container-elevate {
+.education-right-image-container-york {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -260,7 +248,7 @@ h4 {
   position: relative;
 }
 
-.experience-right-elevate {
+.education-right-york {
   position: absolute;
   top: 50%;
   right: 60%;
@@ -271,7 +259,7 @@ h4 {
   box-sizing: border-box;
 }
 
-.experience-right-description {
+.education-right-description {
   margin-left: 6rem;
   padding-left: 10px;
   padding-right: 10px;
@@ -285,7 +273,38 @@ h4 {
   color: white;
 }
 
+#yorkLogo {
+  height: 75%;
+}
+
+/*Experience Section*/
+
+#experience {
+  color: white !important;
+}
+
+.position {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 /*Project Section*/
+.listOfProjects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.listOfProjects .card {
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 21rem;
+}
+
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -486,19 +505,19 @@ h4 {
     margin-bottom: 2px;
   }
 
-  .mobile-experience {
+  .mobile-education {
     display: block;
     text-align: center;
   }
 
-  .mobile-experience-right {
+  .mobile-education-right {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .experience-left-description {
+  .education-left-description {
     left: -2rem;
     margin-right: -1rem;
     width: fit-content;
@@ -511,7 +530,7 @@ h4 {
     color: white;
   }
 
-  .experience-right-description {
+  .education-right-description {
     right: -4rem;
     margin-left: -3rem;
     width: fit-content;
@@ -527,14 +546,14 @@ h4 {
     margin-right: 130px;
   }
 
-  .experience-job-title-steelcase {
+  .education-job-title-calvin {
     margin-left: 120px;
     align-items: center;
   }
 
-  .experience-job-elevate,
-  .experience-date-elevate,
-  .experience-city-elevate {
+  .education-job-york,
+  .education-date-york,
+  .education-city-york {
     text-align: left; /* Align the text with the container */
     display: block;
     white-space: nowrap; /* Keep text on a single line */
@@ -543,49 +562,34 @@ h4 {
     overflow: visible; /* Allow text to overflow but remain on one line */
   }
 
-  .experience-job-elevate {
+  .education-job-york {
     padding-right: 210px;
   }
 
-  .experience-date-elevate {
+  .education-date-york {
     padding-right: 50px;
   }
 
-  .experience-city-elevate {
+  .education-city-york {
     padding-right: 80px;
   }
 
-  .experience-job-title-strikes {
-    margin-left: 120px;
-    align-items: center;
-  }
-
-  .mobile-experience-image-container-steelcase {
+  .mobile-education-image-container-calvin {
     margin-left: 70px;
     margin-top: 50px;
   }
 
-  .mobile-experience-image-container-strikes {
-    margin-left: 5px;
-    margin-top: 30px;
-  }
-
-  .experience-description-steelcase {
+  .education-description-calvin {
     margin-left: 90px;
   }
 
-  h4,
-  .experience-description-strikes {
-    margin-left: 120px;
-  }
-
-  .mobile-experience-image-container-steelcase {
+  .mobile-education-image-container-calvin {
     background-color: transparent;
     text-align: center;
     padding-top: 0;
   }
 
-  .mobile-experience-image-container-elevate {
+  .mobile-education-image-container-york {
     background-color: transparent;
     display: inline-block;
     vertical-align: top;
@@ -593,33 +597,23 @@ h4 {
     margin-top: 30px;
   }
 
-  .experience-description-elevate {
+  .education-description-york {
     margin-left: 0;
     text-align: center;
   }
 
-  .mobile-experience-image-container-strikes {
-    background-color: transparent;
-    text-align: center;
-    padding-left: 60px;
-  }
-
-  .experience-left-steelcase {
+  .experience-left-calvin {
     display: none;
   }
 
-  .mobile-experience-steelcase {
+  .mobile-experience-calvin {
     display: inline-block;
     width: 100%;
   }
 
-  .mobile-experience-elevate {
+  .mobile-experience-calvin {
     width: 100%;
     padding-right: 20px;
-  }
-
-  .mobile-experience-strikes {
-    width: 100%;
   }
 
   /*Projects Section*/

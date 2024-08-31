@@ -5,32 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tyler Arista | CS Student</title>
     <link rel="stylesheet" href="./index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;800&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   </head>
-  <body>
-    <div class="intro">
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy" tabindex="0">
+    <div id="intro" class="intro">
       <div id="particles-js"></div>
       <div class="intro-lettering">
-        <p>Hello, I'm Tyler.</p>
+        <p>Hi, I'm Tyler.</p>
         <p>I'm a Computer Science Student at Calvin University</p>
-        <button class="intro-button">View my work &#x2193;</button>
+        <button id="introButton">View my work &#x2193;</button>
       </div>
-      <script src="./backgroundAnimations/particles.js-master/particles.min.js"></script>
-      <script src="./backgroundAnimations/particles.js-master/particles.js"></script>
     </div>
 
-    <div class="about">
+    <nav id="navbar" class="navbar px-3 fixed-top">
+      <ul class="nav nav-pills ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="about" class="about" data-bs-spy="scroll" data-bs-target="#navbar-about" data-bs-offset="-10" class="scrollspy" tabindex="0">
       <div class="about-title">
-        <p>About</p>
+        <p id="about"><u>About</u></p>
       </div>
       <div class="about-description">
         <div class="personal-info">
@@ -39,9 +51,9 @@
           </div>
           <div class="personal-description">
             <p>
-              Currently pursuing a Computer Science degree at Calvin University,
+              Currently pursuing a Computer Science degree with a minor in Data Science at Calvin University,
               I am deeply passionate about evolving into a skilled software
-              engineer. My coursework has encompassed crucial subjects including
+              engineer/software development. My coursework has encompassed crucial subjects including
               Data Structures, Algorithms, Software Engineering, Computer
               Architecture, Artificial Intelligence, and Machine Learning. With
               a fervent interest in technology and a solid foundation in key
@@ -98,10 +110,10 @@
           <div class="right-about-column">
             <div class="c-block">
               <div class="tech-image">
-                <img class="cplusplus" src="./images/c++Logo.png" />
+                <img class="cplusplus" src="./images/C-Sharp.webp" />
               </div>
               <div class="tech-name-placeholder">
-                <p class="tech-name">C++</p>
+                <p class="tech-name">C#</p>
               </div>
             </div>
             <div class="react-block">
@@ -116,234 +128,171 @@
         </div>
       </div>
     </div>
-    <div class="experience">
-      <div class="experience-title"><p>Experience</p></div>
-      <div class="experience-left mobile-experience">
-        <div
-          class="experience-left-image-container-steelcase mobile-experience-image-container-steelcase"
-        >
-          <img
-            class="experience-left-steelcase"
-            src="./images/steelcaseLogo.png"
-          />
-          <img
-            class="mobile-experience-steelcase"
-            src="./images/steelcase.png"
-          />
-        </div>
-        <div class="experience-left-description">
-          <h3 class="experience-job-title-steelcase">IT Security Intern</h3>
-          <h4 class="experience-job-steelcase">
-            Steelcase &#x2022; Internship
-          </h4>
-          <h4 class="experience-date-steelcase">May 2023 - Aug 2023</h4>
-          <h4 class="experience-city-steelcase">Grand Rapids, Michigan</h4>
-          <ul class="experience-description-steelcase">
-            <li>
-              Implemented and deployed new Password Protection standard at a
-              company with 12,700 employees, resulting in a decrease in security
-              breaches related to compromised passwords.
-            </li>
-            <li>
-              Successfully migrated Single Sign-On (SSO) Connectors from one
-              Identity Provider to another for a global company, achieving a
-              seamless transition with zero downtime and reducing authentication
-              errors.
-            </li>
-            <li>
-              Collaborated with Application Security Engineer to identify and
-              remediate vulnerabilities within internal applications, leading to
-              a reduction in high-risk security issues and enhancing the overall
-              application security posture of the company.
-            </li>
-          </ul>
-        </div>
+    <div id="education" class="education" data-bs-spy="scroll" data-bs-target="#navbar-education" data-bs-offset="-10" class="scrollspy" tabindex="0">
+      <div class="education-title">
+        <p id="about"><u>Education</u></p>
       </div>
-      <div class="experience-right mobile-experience-right">
-        <div class="experience-right-description">
-          <h3 class="experience-job-title-elevate">
-            Elevate Small Group Leader
-          </h3>
-          <h4 class="experience-job-elevate">
-            Willow Creek Community Church &#x2022; Volunteer
+      <div
+          class="education-left-image-container-calvin mobile-education-image-container-calvin"
+        >
+          <img id="calvinLogo"
+            class="education-left-calvin"
+            src="./images/calvinLogo.png"
+          />
+        </div>
+        <div class="education-left-description">
+          <h3 class="education-job-title-calvin">Calvin University</h3>
+          <h4 class="education-job-calvin">
+            Bachelors of Science in Computer Science | Data Science Minor
           </h4>
-          <h4 class="experience-date-elevate">Aug 2018 - Apr 2021</h4>
-          <h4 class="experience-city-elevate">South Barrington, Illinois</h4>
-          <p class="experience-description-elevate">
-            As a Small Group Leader at Willow Creek Community Church, I helped
-            students grow in their faith through group sessions, local retreats,
-            community volunteering, and event organization. By facilitating
-            engaging discussions and activities, I was able to help guide them
-            on their spiritual journeys.
+          <h4 class="education-date-calvin">Graduation: May 2025</h4>
+          <h4 class="education-city-calvin">Grand Rapids, Michigan</h4>
+          <p>
+            Related Courses: Introduction to Computing, Introduction to Data Structures, Data Structures & Algorithms, Computer Language Concepts, Software Engineering,
+                Artificial Intelligence, Machine Learning ,Introduction to Computer Architecture, Operating Systems & Networking, Web Development(Fall 2024),
+                Linear Algebra, Discrete Mathematics for Computing, Discrete Mathematics, Statistics, Calculus 1
           </p>
         </div>
-        <div
-          class="experience-right-image-container-elevate mobile-experience-image-container-elevate"
-        >
-          <img
-            class="experience-right-elevate mobile-experience-elevate"
-            src="./images/willowLogo.png"
-          />
+        <div class="education-right mobile-experience-right">
+          <div class="education-right-description">
+            <h3 class="education-job-title-york">
+              York Community High School
+            </h3>
+            <h4 class="education-date-york">2017 - 2021</h4>
+            <h4 class="education-city-york">Elmhurst, Illinois</h4>
+            <p class="education-description-york">Relevant Coursework: AP Computer Science A, AP Computer Science Principles</p>
+            <p class="education-description-york">Awards: Illinois State Seal of Biliteracy(Spanish)</p>
+          </div>
+          <div
+            class="education-right-image-container-york mobile-educatiion-image-container-york"
+          >
+            <img id="yorkLogo"
+              class="education-right-york mobile-education-york"
+              src="./images/yorkLogo.png"
+            />
+          </div>
         </div>
       </div>
-      <div class="experience-left mobile-experience">
-        <div
-          class="experience-left-image-container-strikes mobile-experience-image-container-strikes"
-        >
-          <img
-            class="experience-left-strikes mobile-experience-strikes"
-            src="./images/strikes.png"
-          />
+    <div id="experience" class="experience" data-bs-spy="scroll" data-bs-target="#navbar-experience" data-bs-offset="-10" class="scrollspy" tabindex="0">
+      <div class="experience-title"><p><u>Experience</u></p></div>
+      <div class="steelcaseIntern position">
+        <h2>Steelcase</h2>
+        <p>Grand Rapids, MI</p>
+        <div class="swe">
+          <h3>Software Development Intern</h3>
+                <h4>May 2024 - Present</h4>
+                <ul>
+                    <li>Contributed to the creation of a new quoting application for specials(customized products), enhancing both frontend user experience and backend data management to streamline the ordering process</li>
+                    <li>Developed an interactive dashboard to report usage and performance metrics of a new generative AI space design tool, including writing code to integrate our API with the database</li>
+                    <li>Update Event Viewer</li>
+                </ul>
         </div>
-        <div class="experience-left-description">
-          <h3 class="experience-job-title-strikes">Catching Camp Instructor</h3>
-          <h4 class="experience-job-strikes">
-            Strikes Baseball & Softball Academy &#x2022; Instructor
-          </h4>
-          <h4 class="experience-date-strikes">Nov 2020 - Feb 2021</h4>
-          <h4 class="experience-city-strikes">Broadview, Illinois</h4>
-          <p class="experience-description-strikes">
-            Successfully served as a catching instructor for a camp, teaching
-            catching fundamentals to 40 players in total. Utilized effective
-            chalk talks, interactive discussions, and skill-building drills.
-          </p>
+        <div class="security">
+          <h3>IT Security Intern</h3>
+                <h4>May 2023 - August 2023</h4>
+                <ul>
+                    <li>Implemented and deployed new Password Protection standard at a company with 12,700 employees, resulting in a decrease in security breaches related to compromised passwords.</li>
+                    <li>Successfully migrated Single Sign-On (SSO) Connectors from one Identity Provider to another for a global company, achieving a seamless transition with zero downtime and reducing authentication errors.</li>
+                    <li>Collaborated with Application Security Engineer to identify and remediate vulnerabilities within internal applications, leading to a reduction in high-risk security issues and enhancing the overall application security posture of the company.</li>
+                </ul>
         </div>
       </div>
+
+      <div class="subsection position" id="elevate">
+        <h2>Elevate Small Group Leader</h2>
+        <h3>Willow Creek Community church</h3>
+        <h4>Aug 2018 - Apr 2021</h4>
+        <h4>South Barrington, IL</h4>
+        <p>As a Small Group Leader at Willow Creek Community Church, I helped students grow in their faith through group sessions, local retreats, community volunteering, and event organization. By facilitating engaging discussions and activities, I was able to help guide them on their spiritual journeys.</p>
     </div>
 
-    <div class="projects">
+    <div class="subsection position" id="strikes">
+        <h2>Catching Camp Instructor</h2>
+        <h3>Strikes Baseball & Softball Academy</h3>
+        <h4>Nov 2020 - Feb 2021</h4>
+        <h4>Broadview, IL</h4>
+        <p>Successfully served as a catching instructor for a camp, teaching catching fundamentals to 40 players in total. Utilized effective chalk talks, interactive discussions, and skill-building drills.</p>
+    </div>
+
+    </div>
+
+    <div id="projects" class="projects" data-bs-spy="scroll" data-bs-target="#navbar-projects" data-bs-offset="-10" tabindex="0">
       <div class="projects-title">
-        <p>Projects</p>
+        <p><u>Projects</u></p>
       </div>
-      <div class="project-tiles">
-        <div class="project-row">
-          <div class="project-container">
-            <div class="project-container-border">
-              <div class="project-info">
-                <div class="project-info-title">
-                  <p>Brick Breaker</p>
-                </div>
-                <div class="project-info-description">
-                  <p>
-                    Designed and implemented a Gui-based Python application that
-                    allows the user to play a brick breaker game that implements
-                    a file-based leaderboard.
-                  </p>
-                </div>
-              </div>
-              <div class="project-image">
-                <a href="https://github.com/tarista13/Brick-Breaker"
-                  ><img
-                    class="brickBreaker-image"
-                    src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjgweGd3aDQ4bzduMG10ZmV3N2d0czlwNDl0a2NxaXlnZHBjNW94ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WBrawYlW5QSSCbGlOo/giphy.gif"
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-container">
-            <div class="project-container-border">
-              <div class="project-info">
-                <div class="project-info-title">
-                  <p>Music Translator</p>
-                </div>
-                <div class="project-info-description">
-                  <p>
-                    An ongoing project: Crafting an inventive React Native app
-                    aiming to break language barriers in music. Using Spotify
-                    and Musixmatch APIs, it'll translate song lyrics, fostering
-                    global connections through the universal language of music.
-                    Stay tuned for more updates as this idea unfolds!
-                  </p>
-                </div>
-              </div>
-              <div class="project-image">
-                <a href="https://github.com/tarista13/Music-Translator"
-                  ><img
-                    class="screenShot-image"
-                    src="./images/musicTranslator.png"
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-container">
-            <div class="project-container-border">
-              <div class="project-info">
-                <div class="project-info-title">
-                  <p>MindfulKnights</p>
-                </div>
-                <div class="project-info-description">
-                  <p>
-                    Developed as a project for my CS262 Software Engineering
-                    class, MindfulKnights is an app dedicated to helping
-                    students find balance amid academic stress. Offering
-                    relaxation tools, creative outlets, and progress tracking,
-                    it aims to empower students to unwind and focus amidst the
-                    demands of student life.
-                  </p>
-                </div>
-              </div>
-              <div class="project-image">
-                <a
-                  href="https://github.com/calvin-cs262-fall2023-teamh/stressReliever-project"
-                  ><img
-                    class="screenShot-image"
-                    src="./images/mindfulKnight.png"
-                /></a>
-              </div>
-            </div>
+      <div class="listOfProjects">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://github.com/tarista13/Brick-Breaker">Brick Breaker</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">CS108 Final Project</h6>
+            <p class="card-text">Designed and implemented a Gui-based Python application that
+              allows the user to play a brick breaker game that implements
+              a file-based leaderboard.</p>
+            <button class="btn btn-primary">Python</button>
           </div>
         </div>
-        <div class="project-row">
-          <div class="project-container">
-            <div class="project-container-border">
-              <div class="project-info">
-                <div class="project-info-title">
-                  <p>Website</p>
-                </div>
-                <div class="project-info-description">
-                  <p>
-                    Having progressed to the second iteration, my website has
-                    evolved with enhanced CSS styles and a newfound grasp on
-                    design principles. As I delve into the upcoming iteration,
-                    I'm excited to integrate JavaScript to further elevate its
-                    functionality and user experience.
-                  </p>
-                </div>
-              </div>
-              <div class="project-image">
-                <a href="https://github.com/tarista13/tarista13.github.io"
-                  ><img
-                    class="website-image"
-                    src="./FirstIteration/images/website.png"
-                /></a>
-              </div>
-            </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://github.com/tarista13/Music-Translator">Music Translator</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Personal Project</h6>
+            <p class="card-text">An ongoing project: Crafting an inventive React Native app
+              aiming to break language barriers in music. Using Spotify
+              and Musixmatch APIs, it'll translate song lyrics.</p>
+              <button class="btn btn-primary">ReactNative</button>
+              <button class="btn btn-primary">API</button>
           </div>
-          <div class="project-container">
-            <div class="project-container-border">
-              <div class="project-info">
-                <div class="project-info-title">
-                  <p>FPS Game</p>
-                </div>
-                <div class="project-info-description">
-                  <p>Description of project</p>
-                </div>
-              </div>
-              <div class="project-image">
-                <a href="https://github.com/tarista13/3DGODOTTutorial"
-                  ><img class="game-image" src="./images/godot.png"
-                /></a>
-              </div>
-            </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><a href="">Baseball Analytics</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Personal Project</h6>
+            <p class="card-text">An ongoing project: Developing a mobile application that provides real-time baseball analytics, player performance metrics, & predictive sports betting insights.</p>
+            <button class="btn btn-primary">Python</button>
+            <button class="btn btn-primary">ReactNative</button>
+            <button class="btn btn-primary">Bootstrap</button>
           </div>
-          
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://calvin-emr.web.app/about-us">Calvin Electronic Medical Record</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Senior Project</h6>
+            <p class="card-text">This is a web development project that utilizes NodeJS, Angular and Typescript. The goals of the upcoming year will be to enhance the application with more assessment functionalities - mother-baby, OBGYN, and pediatrics.</p>
+            <button class="btn btn-primary">NodeJS</button>
+            <button class="btn btn-primary">Angular</button>
+            <button class="btn btn-primary">Typescript</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://github.com/calvin-cs262-fall2023-teamh/stressReliever-project">Mindful Knights</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">CS262 Project</h6>
+            <p class="card-text">Developed as a project for my CS262 Software Engineering
+              class, MindfulKnights is an app dedicated to helping
+              students find balance amid academic stress. </p>
+            <button class="btn btn-primary">ReactNative</button>
+            <button class="btn btn-primary">SQL Databases</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://github.com/tarista13/3DGODOTTutorial">FPS Game</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Personal Project</h6>
+            <p class="card-text"> Some Text</p>
+            <button class="btn btn-primary">Python</button>
+            <button class="btn btn-primary">GODOT</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="contact">
+    <div id="contact" class="contact" data-bs-spy="scroll" data-bs-target="#navbar-contact" data-bs-offset="-10" tabindex="0">
       <form action="https://api.web3forms.com/submit" method="POST">
-        <p class="contact-title">Contact</p>
+        <p class="contact-title"><u>Contact</u></p>
         <p class="contact-info">
           Have a question or want to work together? Leave your details and I'll
           get back to you as soon as possible.
@@ -404,5 +353,27 @@
         ></a>
       </div>
     </footer>
+    <script>
+      document.getElementById('introButton').addEventListener('click', function(event) {
+          event.preventDefault();
+          document.querySelector('#about').scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+
+      window.addEventListener('scroll', function () {
+      var navbar = document.getElementById('navbar');
+      var introSection = document.getElementById('intro');
+      var introHeight = introSection.offsetHeight;
+
+      if (window.scrollY >= introHeight) {
+        navbar.classList.add('fixed-top');
+      } else {
+        navbar.classList.remove('fixed-top');
+      }
+    });
+
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
