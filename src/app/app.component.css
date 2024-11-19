@@ -1,0 +1,45 @@
+section {
+    border: 3px solid red;
+    width: 42%;
+    float: left;
+    padding-right: 15px;
+    box-sizing: border-box;
+    justify-items: center;
+}
+
+.social-media {
+    border: 2px solid green;
+}
+
+aside {
+    border: 3px solid blue;
+    width: 58%;
+    float: right;
+    padding: 15px;
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* border: 1px solid #ccc; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.about {
+
+}
+
+.education {
+
+}
+
+.experience {
+
+}
+
+.projects {
+
+}
+
+footer {
+
+}
