@@ -57,7 +57,7 @@ import {
   ɵɵinject,
   ɵɵinjectAttribute,
   ɵɵstyleProp
-} from "./chunk-5FUJWLSI.js";
+} from "./chunk-TIFL3VZN.js";
 
 // node_modules/@angular/common/fesm2022/common.mjs
 var _DOM = null;
@@ -4976,6 +4976,7 @@ export {
   parseCookieValue,
   CommonModule,
   PLATFORM_BROWSER_ID,
+  isPlatformBrowser,
   isPlatformServer,
   ViewportScroller,
   XhrFactory
@@ -4989,4 +4990,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-MDNY27OP.js.map
+//# sourceMappingURL=chunk-PPJGWLB7.js.map

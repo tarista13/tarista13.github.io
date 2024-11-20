@@ -21,17 +21,75 @@
     <p>Third Paragraph</p>
   </div>
   <div class="education">
-    <p>CalvinU</p>
+    <app-education
+    [schoolName]="'Calvin University'"
+    [major]="'Computer Science'"
+    [minor]="'Data Science'"
+    [graduationDate]="'May 2025'"
+    [location]="'Grand Rapids, MI'"
+    [relatedCourses]="'Add them later'">
+    </app-education>
   </div>
   <div class="experience">
-    <p>job1</p>
-    <p>job2</p>
-    <p>job3</p>
+    <app-job-card
+    [jobTitle]="'Software Engineer Intern'"
+    [companyName]="'Steelcase'"
+    [location]="'Grand Rapids, MI'"
+    [startDate]="'May 2024'"
+    [endDate]="'Present'"
+    [jobDescription]="'Fill In'">
+    </app-job-card>
+    <app-job-card
+    [jobTitle]="'CyberSecurity Intern'"
+    [companyName]="'Steelcase'"
+    [location]="'Grand Rapids, MI'"
+    [startDate]="'May 2023'"
+    [endDate]="'Aug 2023'"
+    [jobDescription]="'Fill In'">
+    </app-job-card>
+    <app-job-card
+    [jobTitle]="'Elevate Small Group Leader'"
+    [companyName]="'Willow Creek Community Church'"
+    [location]="'South Barrington, IL'"
+    [startDate]="'Aug 2018'"
+    [endDate]="'Apr 2021'"
+    [jobDescription]="'Fill In'">
+    </app-job-card>
+    <app-job-card
+    [jobTitle]="'Catching Camp Instructor'"
+    [companyName]="'Strikes Baseball Academy'"
+    [location]="'Broadview, IL'"
+    [startDate]="'Nov 2020'"
+    [endDate]="'Jan 2021'"
+    [jobDescription]="'Fill In'">
+    </app-job-card>
   </div>
   <div class="projects">
-    <p>project1</p>
-    <p>project2</p>
-    <p>project3</p>
+    <app-project-card
+    [name]="'Music Translator'"
+    [subtitle]="'CS336 Final Project'"
+    [description]="'Fill In'">
+    </app-project-card>
+    <app-project-card
+    [name]="'Calvin Electronic Medical Record'"
+    [subtitle]="'Senior Project'"
+    [description]="'Fill In'">
+    </app-project-card>
+    <app-project-card
+    [name]="'Baseball Analytics'"
+    [subtitle]="'Personal Project'"
+    [description]="'Fill In'">
+    </app-project-card>
+    <app-project-card
+    [name]="'Mindful Knights'"
+    [subtitle]="'CS262 Project'"
+    [description]="'Fill In'">
+    </app-project-card>
+    <app-project-card
+    [name]="'Brick Breaker'"
+    [subtitle]="'CS108 Final Project'"
+    [description]="'Fill In'">
+    </app-project-card>
   </div>
 </aside>
 <footer>

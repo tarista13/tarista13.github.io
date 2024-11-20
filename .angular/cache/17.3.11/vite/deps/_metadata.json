@@ -1,46 +1,52 @@
 {
-  "hash": "743ea748",
-  "configHash": "76a465c1",
+  "hash": "3d3ac399",
+  "configHash": "def35b11",
   "lockfileHash": "dd6c8d01",
-  "browserHash": "d7c882a7",
+  "browserHash": "edfc9812",
   "optimized": {
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "bef00732",
+      "fileHash": "86aa957d",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "6e7fbcf6",
+      "fileHash": "21e16e6d",
       "needsInterop": false
     },
     "@angular/platform-browser/animations/async": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/animations/async.mjs",
       "file": "@angular_platform-browser_animations_async.js",
-      "fileHash": "6528fc92",
+      "fileHash": "4c86dd99",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "3b0e5d11",
+      "fileHash": "732bdf06",
+      "needsInterop": false
+    },
+    "@angular/material/card": {
+      "src": "../../../../../node_modules/@angular/material/fesm2022/card.mjs",
+      "file": "@angular_material_card.js",
+      "fileHash": "114ba031",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-ML4UEPMJ": {
-      "file": "chunk-ML4UEPMJ.js"
+    "chunk-QJFSNJOR": {
+      "file": "chunk-QJFSNJOR.js"
     },
-    "browser-GKERMG5R": {
-      "file": "browser-GKERMG5R.js"
+    "browser-66WMKP6O": {
+      "file": "browser-66WMKP6O.js"
     },
-    "chunk-MDNY27OP": {
-      "file": "chunk-MDNY27OP.js"
+    "chunk-PPJGWLB7": {
+      "file": "chunk-PPJGWLB7.js"
     },
-    "chunk-5FUJWLSI": {
-      "file": "chunk-5FUJWLSI.js"
+    "chunk-TIFL3VZN": {
+      "file": "chunk-TIFL3VZN.js"
     }
   }
 }
