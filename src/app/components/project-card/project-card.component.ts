@@ -13,4 +13,5 @@ export class ProjectCardComponent {
   name = input.required<string>();
   subtitle = input.required<string>();
   description = input.required<string>();
+  link = input.required<string>();
 }

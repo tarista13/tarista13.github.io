@@ -1,8 +1,15 @@
 <mat-card>
-    <mat-card-header>
-        <mat-card-title>{{ name() }}</mat-card-title>
-        <mat-card-subtitle>{{ subtitle() }}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>{{ description() }}</mat-card-content>
-    <mat-card-footer></mat-card-footer>
+    <div class="column-left">
+        <mat-card-content>
+            <img alt="Replace Image">
+        </mat-card-content>
+    </div>  
+    <div class="column-right">
+        <mat-card-header>
+            <mat-card-title>{{ name() }}</mat-card-title>
+            <mat-card-subtitle>{{ subtitle() }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>{{ description() }}</mat-card-content>
+        <mat-card-footer></mat-card-footer>
+    </div>
 </mat-card>

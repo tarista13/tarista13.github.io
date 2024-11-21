@@ -1,14 +1,21 @@
 section {
     border: 3px solid red;
     width: 42%;
+    height: 100%;
     float: left;
     padding-right: 15px;
     box-sizing: border-box;
     justify-items: center;
+    padding-top: 5%;
+}
+
+.introHeader {
+    border: 2px solid maroon;
 }
 
 .social-media {
     border: 2px solid green;
+    margin-top: 200px;
 }
 
 aside {
@@ -16,7 +23,7 @@ aside {
     width: 58%;
     float: right;
     padding: 15px;
-    height: calc(100vh - 80px);
+    height: 100%;
     box-sizing: border-box;
     border-radius: 5px;
     /* border: 1px solid #ccc; */
@@ -24,22 +31,21 @@ aside {
     overflow-y: auto;
 }
 
-.about {
+#navbar {
+    border: 2px solid purple;
+}
 
+.about,
+.education,
+.experience,
+.projects {
+    margin-bottom: 50px;
+}
+
+.about {
+    border: 2px solid green;
 }
 
 .education {
-
-}
-
-.experience {
-
-}
-
-.projects {
-
-}
-
-footer {
 
 }

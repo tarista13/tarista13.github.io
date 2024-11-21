@@ -1,24 +1,30 @@
 <section>
-  <h1>Tyler Arista</h1>
-  <h3>SWE Intern at Steelcase</h3>
-  <p>I build accessible, pixel-perfect digital experiences for the web</p>
-  <div class="social-media">
-    <a href="https://www.instagram.com/t_arista13/">
-      <i class="bi bi-instagram"></i>
+  <div class="introHeader">
+    <h1>Tyler Arista</h1>
+    <h3>SWE Intern &#64;Steelcase</h3>
+    <p>I build accessible, pixel-perfect digital experiences for the web</p>
+  </div>
+  <app-navbar id="navbar"></app-navbar>
+  <footer class="social-media">
+    <a href="https://github.com/tarista13">
+      <i class="bi bi-github"></i>
     </a>
     <a href="https://www.linkedin.com/in/tyler-arista/">
       <i class="bi bi-linkedin"></i>
     </a>
-    <a href="https://github.com/tarista13">
-      <i class="bi bi-github"></i>
+    <a href="https://www.instagram.com/t_arista13/">
+      <i class="bi bi-instagram"></i>
     </a>
-  </div>
+    <a href="https://twitter.com/t_arista13">
+      <i class="bi bi-twitter-x"></i>
+    </a>
+  </footer>
 </section>
 <aside>
   <div class="about">
-    <p>First Paragraph</p>
-    <p>Second Paragraph</p>
-    <p>Third Paragraph</p>
+    <p>Currently pursuing a Computer Science degree with a minor in Data Science at Calvin University, I am deeply passionate about evolving into a skilled software engineer/software development. My coursework has encompassed crucial subjects including Data Structures, Algorithms, Software Engineering, Computer Architecture, Artificial Intelligence, and Machine Learning. With a fervent interest in technology and a solid foundation in key areas of computer science, I aim to leverage these skills to contribute meaningfully in the field of software development.</p>
+    <p>Skills: </p>
+    <p>Interests: </p>
   </div>
   <div class="education">
     <app-education
@@ -27,7 +33,8 @@
     [minor]="'Data Science'"
     [graduationDate]="'May 2025'"
     [location]="'Grand Rapids, MI'"
-    [relatedCourses]="'Add them later'">
+    [relatedCourses]="'Introduction to Computing, Introduction to Data Structures, Data Structures & Algorithms, Computer Language Concepts, Software Engineering, Artificial Intelligence, Machine Learning ,Introduction to Computer Architecture, Operating Systems & Networking, Web Development(Fall 2024), Linear Algebra, Discrete Mathematics for Computing, Discrete Mathematics, Statistics, Calculus 1'"
+    [imageSrc]="'../../images/calvinLogo.png'">
     </app-education>
   </div>
   <div class="experience">
@@ -37,7 +44,7 @@
     [location]="'Grand Rapids, MI'"
     [startDate]="'May 2024'"
     [endDate]="'Present'"
-    [jobDescription]="'Fill In'">
+    [jobDescription]="'Collaborated on developing a new quoting application for customized products, improving frontend user experience and backend data management to streamline orders, while also creating an interactive dashboard to track usage and performance metrics of a generative AI space design tool by integrating the API with the database. Additionally, updated the Event Viewer to enhance functionality.'">
     </app-job-card>
     <app-job-card
     [jobTitle]="'CyberSecurity Intern'"
@@ -45,15 +52,15 @@
     [location]="'Grand Rapids, MI'"
     [startDate]="'May 2023'"
     [endDate]="'Aug 2023'"
-    [jobDescription]="'Fill In'">
+    [jobDescription]="'Implemented a new Password Protection standard for a company with 12,700 employees, reducing security breaches from compromised passwords, and successfully migrated Single Sign-On (SSO) Connectors to a new Identity Provider with zero downtime, improving authentication reliability. Additionally, collaborated with an Application Security Engineer to remediate vulnerabilities in internal applications, reducing high-risk security issues and strengthening overall security posture.'">
     </app-job-card>
     <app-job-card
-    [jobTitle]="'Elevate Small Group Leader'"
+    [jobTitle]="'Small Group Leader'"
     [companyName]="'Willow Creek Community Church'"
     [location]="'South Barrington, IL'"
     [startDate]="'Aug 2018'"
     [endDate]="'Apr 2021'"
-    [jobDescription]="'Fill In'">
+    [jobDescription]="'As a Small Group Leader at Willow Creek Community Church, I helped students grow in their faith through group sessions, local retreats, community volunteering, and event organization. By facilitating engaging discussions and activities, I was able to help guide them on their spiritual journeys.'">
     </app-job-card>
     <app-job-card
     [jobTitle]="'Catching Camp Instructor'"
@@ -61,36 +68,44 @@
     [location]="'Broadview, IL'"
     [startDate]="'Nov 2020'"
     [endDate]="'Jan 2021'"
-    [jobDescription]="'Fill In'">
+    [jobDescription]="'Successfully served as a catching instructor for a camp, teaching catching fundamentals to 40 players in total. Utilized effective chalk talks, interactive discussions, and skill-building drills.'">
     </app-job-card>
+    <a href="../assets/resume/Arista_Tyler(Fall 2024).pdf">View Full Resume &#8599;</a>
   </div>
   <div class="projects">
     <app-project-card
     [name]="'Music Translator'"
     [subtitle]="'CS336 Final Project'"
-    [description]="'Fill In'">
+    [description]="'An ongoing project: Crafting an inventive React Native app aiming to break language barriers in music. Using Spotify and Musixmatch APIs, it will translate song lyrics.'"
+    [link]="''">
     </app-project-card>
     <app-project-card
     [name]="'Calvin Electronic Medical Record'"
     [subtitle]="'Senior Project'"
-    [description]="'Fill In'">
+    [description]="'This is a web development project that utilizes NodeJS, Angular and Typescript. The goals of the upcoming year will be to enhance the application with more assessment functionalities - mother-baby, OBGYN, and pediatrics.'"
+    [link]="''">
     </app-project-card>
     <app-project-card
     [name]="'Baseball Analytics'"
     [subtitle]="'Personal Project'"
-    [description]="'Fill In'">
+    [description]="'An ongoing project: Developing a mobile application that provides real-time baseball analytics, player performance metrics, & predictive sports betting insights.'"
+    [link]="''">
     </app-project-card>
     <app-project-card
     [name]="'Mindful Knights'"
     [subtitle]="'CS262 Project'"
-    [description]="'Fill In'">
+    [description]="'Developed as a project for my CS262 Software Engineering class, MindfulKnights is an app dedicated to helping students find balance amid academic stress.'"
+    [link]="''">
     </app-project-card>
     <app-project-card
     [name]="'Brick Breaker'"
     [subtitle]="'CS108 Final Project'"
-    [description]="'Fill In'">
+    [description]="'Designed and implemented a Gui-based Python application that allows the user to play a brick breaker game that implements a file-based leaderboard.'"
+    [link]="''">
     </app-project-card>
+    <a routerLink="">View Full Project Archieve</a>
   </div>
+  <footer>
+    <p>Testing out footer</p>
+  </footer>
 </aside>
-<footer>
-</footer>

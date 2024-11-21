@@ -1,0 +1,28 @@
+mat-card {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent !important;
+    border: 3px solid red;
+    padding: 16px;
+}
+
+#dateRange {
+    font-size: 10px !important;
+}
+
+.card-content {
+    display: flex;
+    width: 100%;
+}
+
+.column-left {
+    flex: 1;
+    max-width: 20%;
+    border: 2px solid green;
+    margin-right: 16px;
+}
+
+.column-right {
+    flex: 3;
+    border: 2px solid blue;
+}

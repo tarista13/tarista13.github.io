@@ -2,7 +2,7 @@ import {
   CommonModule,
   DOCUMENT,
   isPlatformBrowser
-} from "./chunk-PPJGWLB7.js";
+} from "./chunk-QEEAN5FL.js";
 import {
   ANIMATION_MODULE_TYPE,
   APP_ID,

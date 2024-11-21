@@ -16,4 +16,5 @@ export class EducationComponent {
   graduationDate = input.required<string>();
   location = input.required<string>();
   relatedCourses = input.required<string>();
+  imageSrc = input.required<string>();
 }
