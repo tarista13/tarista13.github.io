@@ -3,7 +3,10 @@ mat-card {
     flex-direction: row;
     background-color: transparent !important;
     border: 3px solid red;
+    border-radius: 8px;
+    margin-top: 2%;
     padding: 16px;
+    margin: 9%;
 }
 
 .card-content {
@@ -21,4 +24,16 @@ mat-card {
 .column-right {
     flex: 3;
     border: 2px solid blue;
+}
+
+img {
+    width: 100%;
+    height: auto;   
+    display: block;
+}
+
+.image {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
 }

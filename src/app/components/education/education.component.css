@@ -2,8 +2,10 @@ mat-card {
     display: flex;
     flex-direction: row;
     background-color: transparent !important;
-    border: 3px solid red;
+    border: 3px solid black;
+    border-radius: 8px;
     padding: 16px;
+    margin: 9%;
 }
 
 #dateRange {
@@ -21,6 +23,19 @@ mat-card {
     border: 2px solid green;
     margin-right: 16px;
 }
+
+img {
+    width: 100%;
+    height: auto;   
+    display: block;
+}
+
+.image {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
 
 .column-right {
     flex: 3;

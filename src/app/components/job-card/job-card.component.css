@@ -2,8 +2,12 @@ mat-card {
     display: flex;
     flex-direction: row;
     background-color: transparent !important;
+    /* border: 3px solid black; */
     border: 3px solid red;
+    border-radius: 8px;
     padding: 16px;
+    margin-top: 2%;
+    margin: 9%;
 }
 
 .card-content {
