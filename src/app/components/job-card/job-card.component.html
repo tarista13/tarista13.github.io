@@ -1,16 +1,13 @@
 <mat-card>
     <div class="column-left">
-        <mat-card-content>
-            <p id="dateRange">{{ startDate() }} - {{ endDate() }}</p>
-        </mat-card-content>
+        <p id="dateRange">{{ startDate() }} - {{ endDate() }}</p>
     </div>
     <div class="column-right">
         <mat-card-header>
-            <mat-card-title>{{ jobTitle() }} &#x2022; {{ companyName() }}</mat-card-title>
-            <mat-card-subtitle>{{ startDate() }} - {{ endDate() }}</mat-card-subtitle>
+            <mat-card-title>{{ jobTitle() }} &#x2022; {{ companyName() }} &#8599;</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-            <p>{{ jobDescription() }}</p>
+            {{ jobDescription() }}
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
     </div>

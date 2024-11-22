@@ -2,11 +2,12 @@ mat-card {
     display: flex;
     flex-direction: row;
     background-color: transparent !important;
-    border: 3px solid red;
+    border: 3px solid white;
     border-radius: 8px;
-    margin-top: 2%;
     padding: 16px;
-    margin: 9%;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-bottom: 2%;
 }
 
 .card-content {
@@ -17,13 +18,13 @@ mat-card {
 .column-left {
     flex: 1;
     max-width: 20%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin-right: 16px;
 }
 
 .column-right {
     flex: 3;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 img {
@@ -36,4 +37,16 @@ img {
     width: 100%;
     max-width: 100%;
     text-align: center;
+}
+
+mat-card-title {
+    font-size: 15px;
+}
+
+mat-card-content {
+    font-size: 13px
+}
+
+img {
+    padding-top: 20%
 }

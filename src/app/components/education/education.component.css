@@ -2,42 +2,49 @@ mat-card {
     display: flex;
     flex-direction: row;
     background-color: transparent !important;
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 8px;
-    padding: 16px;
-    margin: 9%;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-bottom: 2%;
 }
 
 #dateRange {
-    font-size: 10px !important;
+    font-size: 12px !important;
+    /* border: 2px solid red; */
 }
 
-.card-content {
+mat-card-header {
+    /* border: 2px solid green; */
+}
+
+mat-card-content {
     display: flex;
     width: 100%;
+    /* border: 2px solid red; */
 }
 
 .column-left {
     flex: 1;
     max-width: 20%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin-right: 16px;
+    padding-top: 5%;
+    padding-left: 6%;
 }
 
 img {
-    width: 100%;
+    width: 80%;
     height: auto;   
     display: block;
+    align-self: center;
+    /* border: 2px solid pink; */
 }
-
-.image {
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-}
-
 
 .column-right {
     flex: 3;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }

@@ -3,11 +3,13 @@ mat-card {
     flex-direction: row;
     background-color: transparent !important;
     /* border: 3px solid black; */
-    border: 3px solid red;
+    border: 3px solid white;
     border-radius: 8px;
     padding: 16px;
-    margin-top: 2%;
-    margin: 9%;
+    margin-left: 9%;
+    margin-right: 9%;
+    /* margin-top: 2%; */
+    margin-bottom: 2%;
 }
 
 .card-content {
@@ -22,11 +24,23 @@ mat-card {
 .column-left {
     flex: 1;
     max-width: 20%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin-right: 16px;
 }
 
 .column-right {
     flex: 3;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+}
+
+mat-card-title {
+    font-size: 15px;
+}
+
+mat-card-content {
+    font-size: 13px
+}
+
+p {
+    padding-top: 20%
 }
