@@ -1,0 +1,50 @@
+mat-card {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent !important;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-bottom: 2%;
+    box-shadow: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+#dateRange {
+    font-size: 12px !important;
+    /* border: 2px solid red; */
+}
+
+mat-card-header {
+    /* border: 2px solid green; */
+}
+
+mat-card-content {
+    display: flex;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.column-left {
+    flex: 1;
+    max-width: 20%;
+    /* border: 2px solid green; */
+    margin-right: 16px;
+    padding-top: 5%;
+    padding-left: 6%;
+}
+
+img {
+    width: 80%;
+    height: auto;   
+    display: block;
+    align-self: center;
+    /* border: 2px solid pink; */
+}
+
+.column-right {
+    flex: 3;
+    /* border: 2px solid blue; */
+}

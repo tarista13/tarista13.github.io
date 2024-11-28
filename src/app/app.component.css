@@ -1,0 +1,73 @@
+section {
+    /* border: 3px solid red; */
+    width: 42%;
+    height: 100%;
+    float: left;
+    padding-right: 15px;
+    box-sizing: border-box;
+    justify-items: center;
+    padding-top: 10%;
+}
+
+.introHeader {
+    /* border: 2px solid maroon; */
+}
+
+#name {
+    /* border: 2px solid orange; */
+    text-align: center;
+}
+
+#bio{
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+#bioDescription{
+    /* border: 2px solid blue; */
+}
+
+.social-media {
+    /* border: 2px solid green; */
+    bottom: 0 !important;
+    margin-top: 45%;
+}
+
+aside {
+    /* border: 3px solid blue; */
+    width: 58%;
+    float: right;
+    padding: 15px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* border: 1px solid #ccc; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.about,
+.education,
+.experience,
+.projects {
+    margin-bottom: 50px;
+}
+
+.about {
+    /* border: 2px solid green; */
+    margin: 9%;
+}
+
+i {
+    font-size: 40px;
+    margin: 15px;
+}
+.sectionLinks {
+    margin: 9%;
+}
+
+footer {
+    /* border: 2px solid pink; */
+    margin-left: 9%;
+    margin-right: 9%;
+}

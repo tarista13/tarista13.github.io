@@ -1,0 +1,23 @@
+<a href="{{ link() }}" target="_blank">
+    <mat-card>
+        <div class="column-left">
+            <img alt="Replace Image" src="{{ image() }}">
+        </div>  
+        <div class="column-right">
+            <mat-card-header>
+                <mat-card-title>
+                    {{ name() }}
+                    <span class="icon">&#8599;</span>
+                </mat-card-title>
+                <mat-card-subtitle>{{ subtitle() }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>{{ description() }}</mat-card-content>
+            <mat-card-footer>
+                @for(skill of iterableSkills; track $index) {
+                    <button>{{ skill }}</button>
+                }
+            </mat-card-footer>       
+        </div>
+    </mat-card>
+    
+</a>

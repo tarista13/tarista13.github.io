@@ -1,0 +1,16 @@
+<mat-card>
+    <div class="column-left">
+        <img id="educationImage" alt="Institution Image" src="{{ imageSrc() }}">
+    </div>
+    <div class="column-right">
+        <mat-card-header>
+            <mat-card-title>{{ schoolName() }}</mat-card-title>
+            <mat-card-subtitle>{{ major() }} | {{ minor() }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>{{ relatedCourses() }}</p>
+        </mat-card-content>
+        <mat-card-footer></mat-card-footer>
+    </div>
+</mat-card>
+

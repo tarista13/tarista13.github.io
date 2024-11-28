@@ -1,0 +1,123 @@
+* {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#name {
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background-color: transparent;
+    margin-left: 20%;
+    margin-right: auto;
+    padding: 0;    
+    width: 24%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    justify-items: center;
+    padding-top: 10%;
+}
+
+aside {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-right: 12%;
+    margin-left: auto;
+    width: 42%;
+    float: right;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+section.mat-elevation-z1 {
+    box-shadow: none !important;
+}
+
+.introHeader {
+    /* border: 2px solid maroon; */
+}
+
+#name {
+    /* border: 2px solid orange; */
+    text-align: center;
+}
+
+#bio{
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+#bioDescription{
+    /* border: 2px solid blue; */
+}
+
+.social-media {
+    /* border: 2px solid green; */
+    bottom: 0 !important;
+    margin-top: 45%;
+}
+
+.about,
+.education,
+.experience,
+.projects {
+    margin-bottom: 50px;
+}
+
+.about {
+    /* border: 2px solid green; */
+    margin: 9%;
+}
+
+i {
+    font-size: 30px;
+    margin: 15px;
+}
+.sectionLinks {
+    margin: 9%;
+}
+
+footer {
+    /* border: 2px solid pink; */
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+@media only screen and (max-width: 1150px) {
+    section {
+        width: 90%;
+        height: auto;
+        float: none;
+        padding-top: 0;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    aside {
+        width: 90%;
+        float: none;
+        height: auto;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .social-media {
+        /* border: 2px solid green; */
+        bottom: 0 !important;
+        margin-top: 5%;
+    }
+
+    .about {
+        text-align: center;
+    }
+}
