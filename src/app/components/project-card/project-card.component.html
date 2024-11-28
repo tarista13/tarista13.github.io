@@ -12,7 +12,9 @@
         </mat-card-header>
         <mat-card-content>{{ description() }}</mat-card-content>
         <mat-card-footer>
-            <p>{{ skills() }}</p>
-        </mat-card-footer>
+            @for(skill of iterableSkills; track $index) {
+                <button>{{ skill }}</button>
+            }
+        </mat-card-footer>       
     </div>
 </mat-card>

@@ -16,4 +16,5 @@ export class JobCardComponent {
   startDate = input.required<string>();
   endDate = input.required<string>();
   jobDescription = input.required<string>();
+  link = input.required<string>();
 }

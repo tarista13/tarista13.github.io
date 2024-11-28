@@ -3,7 +3,7 @@ html, body, i, a {
     margin: 0;
     font-family: "Inter", sans-serif !important;
     font-feature-settings: "liga" 1, "calt" 1;
-    background-color: rgb(16,28,57) !important;
+    background-color: black !important;
     color: white !important;
   }
   

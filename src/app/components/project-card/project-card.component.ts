@@ -15,4 +15,8 @@ export class ProjectCardComponent {
   description = input.required<string>();
   link = input.required<string>();
   skills = input.required<string[]>();
+
+  get iterableSkills(): string[] {
+    return this.skills();
+  }
 }
