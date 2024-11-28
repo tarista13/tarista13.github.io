@@ -78,3 +78,11 @@ mat-card-content {
 img {
     padding-top: 20%
 }
+
+button {
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+}

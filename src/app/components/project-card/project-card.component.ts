@@ -13,6 +13,7 @@ export class ProjectCardComponent {
   name = input.required<string>();
   subtitle = input.required<string>();
   description = input.required<string>();
+  image = input.required<string>();
   link = input.required<string>();
   skills = input.required<string[]>();
 

@@ -1,7 +1,7 @@
 <a href="{{ link() }}" target="_blank">
     <mat-card>
         <div class="column-left">
-            <p id="dateRange">{{ startDate() }} - {{ endDate() }}</p>
+            <img src="{{ logo() }}" alt="{{companyName()}} logo">
         </div>
         <div class="column-right">
             <mat-card-header>
@@ -9,6 +9,7 @@
                     {{ jobTitle() }} &#x2022; {{ companyName() }}
                     <span class="icon">&#8599;</span>
                 </mat-card-title>            
+                <mat-card-subtitle>{{ startDate() }} - {{ endDate() }}</mat-card-subtitle>
             </mat-card-header>
             <mat-card-content>
                 {{ jobDescription() }}
