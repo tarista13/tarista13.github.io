@@ -14,4 +14,5 @@ export class ProjectCardComponent {
   subtitle = input.required<string>();
   description = input.required<string>();
   link = input.required<string>();
+  skills = input.required<string[]>();
 }

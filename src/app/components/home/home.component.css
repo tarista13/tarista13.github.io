@@ -1,12 +1,25 @@
+* {
+    border: none !important;
+    box-shadow: none !important;
+}
+
 section {
-    /* border: 3px solid red; */
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;    
     width: 42%;
     height: 100%;
     float: left;
-    padding-right: 15px;
     box-sizing: border-box;
     justify-items: center;
     padding-top: 10%;
+}
+
+section.mat-elevation-z1 {
+    box-shadow: none !important;
 }
 
 .introHeader {
@@ -59,7 +72,7 @@ aside {
 }
 
 i {
-    font-size: 40px;
+    font-size: 30px;
     margin: 15px;
 }
 .sectionLinks {

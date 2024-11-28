@@ -6,16 +6,16 @@
     </div>
     <app-navbar id="navbar"></app-navbar>
     <footer class="social-media">
-      <a href="https://github.com/tarista13">
+      <a href="https://github.com/tarista13" target="_blank">
         <i class="bi bi-github"></i>
       </a>
-      <a href="https://www.linkedin.com/in/tyler-arista/">
+      <a href="https://www.linkedin.com/in/tyler-arista/" target="_blank">
         <i class="bi bi-linkedin"></i>
       </a>
-      <a href="https://www.instagram.com/t_arista13/">
+      <a href="https://www.instagram.com/t_arista13/" target="_blank">
         <i class="bi bi-instagram"></i>
       </a>
-      <a href="https://twitter.com/t_arista13">
+      <a href="https://twitter.com/t_arista13" target="_blank">
         <i class="bi bi-twitter-x"></i>
       </a>
     </footer>
@@ -74,34 +74,39 @@
     </div>
     <div class="projects">
       <app-project-card
+      [name]="'Calvin Electronic Medical Record'"
+      [subtitle]="'Senior Project'"
+      [description]="'This is a web development project that utilizes Angular, NodeJS and Typescript. The goals of the upcoming year will be to enhance the application with more assessment functionalities - mother-baby, OBGYN, and pediatrics.'"
+      [link]="'../../../assets/calvinEMR.png'"
+      [skills]="['Angular', 'Firebase', 'Typescript']">
+      </app-project-card>
+      <app-project-card
       [name]="'Music Translator'"
       [subtitle]="'CS336 Final Project'"
       [description]="'An ongoing project: Crafting an inventive React Native app aiming to break language barriers in music. Using Spotify and Musixmatch APIs, it will translate song lyrics.'"
-      [link]="'../../../assets/musicTranslator.png'">
-      </app-project-card>
-      <app-project-card
-      [name]="'Calvin Electronic Medical Record'"
-      [subtitle]="'Senior Project'"
-      [description]="'This is a web development project that utilizes NodeJS, Angular and Typescript. The goals of the upcoming year will be to enhance the application with more assessment functionalities - mother-baby, OBGYN, and pediatrics.'"
-      [link]="'../../../assets/calvinEMR.png'">
+      [link]="''"
+      [skills]="['Angular', 'Firebase']">
       </app-project-card>
       <app-project-card
       [name]="'Baseball Analytics'"
       [subtitle]="'Personal Project'"
       [description]="'An ongoing project: Developing a mobile application that provides real-time baseball analytics, player performance metrics, & predictive sports betting insights.'"
-      [link]="''">
+      [link]="''"
+      [skills]="['Python', '...']">
       </app-project-card>
       <app-project-card
       [name]="'Mindful Knights'"
       [subtitle]="'CS262 Project'"
       [description]="'Developed as a project for my CS262 Software Engineering class, MindfulKnights is an app dedicated to helping students find balance amid academic stress.'"
-      [link]="'../../../assets/mindfulKnight.png'">
+      [link]="''"
+      [skills]="['ReactNative', 'Azure']">
       </app-project-card>
       <app-project-card
       [name]="'Brick Breaker'"
       [subtitle]="'CS108 Final Project'"
       [description]="'Designed and implemented a Gui-based Python application that allows the user to play a brick breaker game that implements a file-based leaderboard.'"
-      [link]="'../../../assets/brickBreaker.png'">
+      [link]="'../../../assets/brickBreaker.png'"
+      [skills]="['Python']">
       </app-project-card>
       <a class="sectionLinks" routerLink="/all-projects">View Full Project Archieve</a>
     </div>

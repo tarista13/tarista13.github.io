@@ -1,1 +1,40 @@
-<p>all-projects works!</p>
+<a routerLink=""><p>&#8592; Tyler Arista</p></a>
+<h1>All Projects</h1>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!-- Year Column -->
+    <ng-container matColumnDef="year">
+      <th mat-header-cell *matHeaderCellDef>Year</th>
+      <td mat-cell *matCellDef="let project">{{ project.year }}</td>
+    </ng-container>
+  
+    <!-- Project Name Column -->
+    <ng-container matColumnDef="project">
+      <th mat-header-cell *matHeaderCellDef>Project</th>
+      <td mat-cell *matCellDef="let project">{{ project.project }}</td>
+    </ng-container>
+  
+    <!-- Made At Column -->
+    <ng-container matColumnDef="madeAt">
+      <th mat-header-cell *matHeaderCellDef>Made At</th>
+      <td mat-cell *matCellDef="let project">{{ project.madeAt }}</td>
+    </ng-container>
+  
+    <!-- Built With Column -->
+    <ng-container matColumnDef="builtWith">
+      <th mat-header-cell *matHeaderCellDef>Built With</th>
+      <td mat-cell *matCellDef="let project">{{ project.builtWith }}</td>
+    </ng-container>
+  
+    <!-- Link Column -->
+    <ng-container matColumnDef="link">
+      <th mat-header-cell *matHeaderCellDef>Link</th>
+      <td mat-cell *matCellDef="let project">
+        <a [href]="project.link" target="_blank">Link</a>
+      </td>
+    </ng-container>
+  
+    <!-- Table Header and Row Definitions -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>  

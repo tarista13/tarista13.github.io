@@ -4,10 +4,15 @@
     </div>  
     <div class="column-right">
         <mat-card-header>
-            <mat-card-title>{{ name() }} &#8599;</mat-card-title>
+            <mat-card-title>
+                {{ name() }}
+                <span class="icon">&#8599;</span>
+            </mat-card-title>
             <mat-card-subtitle>{{ subtitle() }}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>{{ description() }}</mat-card-content>
-        <mat-card-footer></mat-card-footer>
+        <mat-card-footer>
+            <p>{{ skills() }}</p>
+        </mat-card-footer>
     </div>
 </mat-card>

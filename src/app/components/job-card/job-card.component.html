@@ -4,7 +4,10 @@
     </div>
     <div class="column-right">
         <mat-card-header>
-            <mat-card-title>{{ jobTitle() }} &#x2022; {{ companyName() }} &#8599;</mat-card-title>
+            <mat-card-title>
+                {{ jobTitle() }} &#x2022; {{ companyName() }}
+                <span class="icon">&#8599;</span>
+            </mat-card-title>            
         </mat-card-header>
         <mat-card-content>
             {{ jobDescription() }}

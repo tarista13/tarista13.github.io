@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { RouterOutlet, RouterLink } from '@angular/router';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AllProjectsComponent } from './components/all-projects/all-projects.component';

@@ -2,12 +2,40 @@ mat-card {
     display: flex;
     flex-direction: row;
     background-color: transparent !important;
-    border: 3px solid white;
+    border: none;
     border-radius: 8px;
     padding: 16px;
     margin-left: 9%;
     margin-right: 9%;
     margin-bottom: 2%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+mat-card:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+mat-card-title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: color 0.3s ease;
+    color: white;
+}
+
+mat-card:hover mat-card-title {
+    color: #FFD700;
+}
+
+mat-card-title .icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+mat-card:hover mat-card-title .icon {
+    transform: translate(5px, -5px);
 }
 
 .card-content {
