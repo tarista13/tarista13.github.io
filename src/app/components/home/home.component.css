@@ -3,6 +3,13 @@
     box-shadow: none !important;
 }
 
+#name {
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 section {
     border: none !important;
     box-shadow: none !important;
@@ -86,20 +93,31 @@ footer {
     margin-right: 9%;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1150px) {
     section {
-        width: 100%;
+        width: 90%;
         height: auto;
         float: none;
         padding-top: 0;
+        margin: 0 auto;
         margin-bottom: 20px;
     }
 
     aside {
-        width: 100%;
+        width: 90%;
         float: none;
         height: auto;
-        margin-top: 0;
+        margin: 0 auto;
         padding: 15px;
+    }
+
+    .social-media {
+        /* border: 2px solid green; */
+        bottom: 0 !important;
+        margin-top: 5%;
+    }
+
+    .about {
+        text-align: center;
     }
 }
