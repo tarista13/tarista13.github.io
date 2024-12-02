@@ -59,13 +59,11 @@ export class AllProjectsComponent {
     this.router.navigate(['/project-description'], {
       queryParams: {
         name: project.project,
-        description: project.description || '',
-        year: project.year || '',
-        madeAt: project.madeAt || '',
-        builtWith: project.builtWith || '',
-        link: project.link || '',
-        image: project.image || '',
+        description: project.description,
+        madeAt: project.madeAt,
+        builtWith: project.builtWith,
+        link: project.link,
       },
     });
-  }  
+  }
 }
