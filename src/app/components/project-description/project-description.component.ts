@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-project-description',
   templateUrl: './project-description.component.html',
-  imports: [RouterLink],
+  imports: [RouterLink, CommonModule],
   standalone: true,
   styleUrls: ['./project-description.component.css'],
 })
