@@ -1,55 +1,55 @@
 {
-  "hash": "7e53e6d2",
-  "configHash": "7249a16e",
-  "lockfileHash": "05d607a4",
-  "browserHash": "f9f17a64",
+  "hash": "2d29c7a3",
+  "configHash": "701094ae",
+  "lockfileHash": "16fa01b2",
+  "browserHash": "b93d761a",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "993e0a8a",
+      "fileHash": "1d215e82",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "9e420851",
+      "fileHash": "e1abcbda",
       "needsInterop": false
     },
     "@angular/material/card": {
       "src": "../../../../../node_modules/@angular/material/fesm2022/card.mjs",
       "file": "@angular_material_card.js",
-      "fileHash": "4639c090",
+      "fileHash": "8e8514e4",
       "needsInterop": false
     },
     "@angular/material/table": {
       "src": "../../../../../node_modules/@angular/material/fesm2022/table.mjs",
       "file": "@angular_material_table.js",
-      "fileHash": "9ff3ffb7",
+      "fileHash": "115e87df",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "6f5773e4",
+      "fileHash": "98c251c0",
       "needsInterop": false
     },
     "@angular/platform-browser/animations/async": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/animations/async.mjs",
       "file": "@angular_platform-browser_animations_async.js",
-      "fileHash": "12adba0d",
+      "fileHash": "e073fe7f",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "aca49067",
+      "fileHash": "49aa38ab",
       "needsInterop": false
     },
     "ag-grid-angular": {
       "src": "../../../../../node_modules/ag-grid-angular/fesm2022/ag-grid-angular.mjs",
       "file": "ag-grid-angular.js",
-      "fileHash": "4c3e4c5c",
+      "fileHash": "00e5ce77",
       "needsInterop": false
     }
   },
@@ -57,8 +57,8 @@
     "browser-KJWUNCXF": {
       "file": "browser-KJWUNCXF.js"
     },
-    "chunk-GQRTJIYG": {
-      "file": "chunk-GQRTJIYG.js"
+    "chunk-TYDS4AFO": {
+      "file": "chunk-TYDS4AFO.js"
     },
     "chunk-WXPZONBG": {
       "file": "chunk-WXPZONBG.js"

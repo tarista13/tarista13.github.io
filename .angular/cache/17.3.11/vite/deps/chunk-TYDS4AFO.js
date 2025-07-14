@@ -4688,8 +4688,6 @@ var _MatInternalFormField = class __MatInternalFormField {
 })();
 
 export {
-  Directionality,
-  BidiModule,
   Platform,
   RtlScrollAxisType,
   supportsScrollBehavior,
@@ -4697,6 +4695,8 @@ export {
   coerceNumberProperty,
   _isNumberValue,
   coerceElement,
+  Directionality,
+  BidiModule,
   MatCommonModule
 };
-//# sourceMappingURL=chunk-GQRTJIYG.js.map
+//# sourceMappingURL=chunk-TYDS4AFO.js.map

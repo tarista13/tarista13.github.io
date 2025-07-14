@@ -9,7 +9,7 @@ import {
   coerceNumberProperty,
   getRtlScrollAxisType,
   supportsScrollBehavior
-} from "./chunk-GQRTJIYG.js";
+} from "./chunk-TYDS4AFO.js";
 import {
   DOCUMENT
 } from "./chunk-EXFDTZRR.js";

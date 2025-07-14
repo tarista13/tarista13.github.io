@@ -1,7 +1,10 @@
+<div>
+  
+</div>
 <section>
     <div class="introHeader">
       <h1 id="name">Tyler Arista</h1>
-      <h3 id="bio">CS Student &#64;Calvin University</h3>
+      <h3 id="bio">Applications Engineer &#64; Steelcase</h3>
       <!-- <p id="bioDescription">I build accessible, pixel-perfect digital experiences for the web</p> -->
     </div>
     <app-navbar id="navbar"></app-navbar>
@@ -18,14 +21,24 @@
       <a href="https://twitter.com/t_arista13" target="_blank">
         <i class="bi bi-twitter-x"></i>
       </a>
+      <a href="mailto:tja9@calvin.edu" target="_blank">
+        <i class="bi bi-envelope"></i>
+      </a>
     </footer>
   </section>
   <aside>
-    <div class="about">
-      <p>Currently pursuing a Computer Science degree with a minor in Data Science at Calvin University, I am deeply passionate about evolving into a skilled software engineer/software development. My coursework has encompassed crucial subjects including Data Structures, Algorithms, Software Engineering, Computer Architecture, Artificial Intelligence, and Machine Learning. With a fervent interest in technology and a solid foundation in key areas of computer science, I aim to leverage these skills to contribute meaningfully in the field of software development.</p>
+    <div>
+      <div class="about">
+      <p>I’m a Computer Science graduate with a Minor in Data Science from Calvin University (May 2025), 
+        currently working as an Applications Engineer Associate at Steelcase. I'm passionate about full-stack development, 
+        data-driven solutions, and building technology that drives meaningful impact.
+        My academic background includes courses in Data Structures, Algorithms, Software Engineering, Computer Architecture, 
+        Artificial Intelligence, and Machine Learning. With hands-on experience in Python, C#, JavaScript, and Agile methodologies, 
+        I’m a dedicated learner and problem-solver eager to contribute to innovative and user-focused software development projects.</p>
       <!-- <p>Skills: Python, C#, JavaScript, ASP.NET MVC, Angular, ReactNative, Git, SQL, Agile Methodologies</p>
       <p>Interests: Software Engineering, Sports, Cooking, & Traveling</p> -->
     </div>
+    <h2>Eduation</h2>
     <div class="education">
       <app-education
       [schoolName]="'Calvin University'"
@@ -33,17 +46,28 @@
       [minor]="'Data Science'"
       [graduationDate]="'May 2025'"
       [location]="'Grand Rapids, MI'"
-      [relatedCourses]="'Introduction to Computing, Introduction to Data Structures, Data Structures & Algorithms'"
+      [relatedCourses]="'Web Development, Database Management, AI & Machine Learning, Predictive Analytics, Applied Data Analysis, Software Engineering'"
       [imageSrc]="'../../../assets/realCalvinLogo.webp'">
       </app-education>
     </div>
+    <h2>Experience</h2>
     <div class="experience">
+      <app-job-card
+      [jobTitle]="'Applications Engineer Associate'"
+      [companyName]="'Steelcase'"
+      [location]="'Grand Rapids, MI'"
+      [startDate]="'June 2025'"
+      [endDate]="'Present'"
+      [logo]="'../../../assets/steelcaseLogo.png'"
+      [jobDescription]="'Will start in June 2025.'"
+      [link]="'https://www.steelcase.com/'">
+      </app-job-card>
       <app-job-card
       [jobTitle]="'Software Engineer Intern'"
       [companyName]="'Steelcase'"
       [location]="'Grand Rapids, MI'"
       [startDate]="'May 2024'"
-      [endDate]="'Present'"
+      [endDate]="'June 2025'"
       [logo]="'../../../assets/steelcaseLogo.png'"
       [jobDescription]="'Collaborated on developing a new quoting application for customized products, improving frontend user experience and backend data management to streamline orders.'"
       [link]="'https://www.steelcase.com/'">
@@ -58,7 +82,7 @@
       [jobDescription]="'Implemented a new Password Protection standard for a company with 12,700 employees, reducing security breaches from compromised passwords.'"
       [link]="'https://www.steelcase.com/'">
       </app-job-card>
-      <app-job-card
+      <!-- <app-job-card
       [jobTitle]="'Small Group Leader'"
       [companyName]="'Willow Creek Community Church'"
       [location]="'South Barrington, IL'"
@@ -77,9 +101,10 @@
       [logo]="'../../../assets/strikesLogo.jpg'"
       [jobDescription]="'Successfully served as a catching instructor for a camp, teaching catching fundamentals to 40 players in total. Utilized effective chalk talks, interactive discussions, and skill-building drills.'"
       [link]="'https://www.strikesbaseballclub.com/'">
-      </app-job-card>
-      <a href="../assets/resume/Arista_Tyler(Fall 2024).pdf" target="_blank" class="sectionLinks">View Full Resume &#8599;</a>
+      </app-job-card> -->
+      <a href="../../../assets/resume/Arista_Tyler(Post Grad May 2025).pdf" target="_blank" class="sectionLinks">View Full Resume &#8599;</a>
     </div>
+    <h2>Projects</h2>
     <div class="projects">
       <app-project-card
       [name]="'Calvin Electronic Medical Record'"
@@ -97,14 +122,14 @@
       [link]="'https://github.com/CS336-Final-Project'"
       [skills]="['Angular', 'Firebase']">
       </app-project-card>
-      <app-project-card
+      <!-- <app-project-card
       [name]="'Mindful Knights'"
       [subtitle]="'CS262 Project'"
       [description]="'Developed as a project for my CS262 Software Engineering class, MindfulKnights is an app dedicated to helping students find balance amid academic stress.'"
       [image]="'../../../assets/mindfulKnight.png'"
       [link]="'https://github.com/calvin-cs262-fall2023-teamh'"
       [skills]="['ReactNative', 'Azure']">
-      </app-project-card>
+      </app-project-card> -->
       <app-project-card
       [name]="'Brick Breaker'"
       [subtitle]="'CS108 Final Project'"
@@ -115,8 +140,9 @@
       </app-project-card>
       <a class="sectionLinks" routerLink="/all-projects">View Full Project Archieve</a>
     </div>
-    <footer>
+    <!-- <footer>
       <p>Testing out footer</p>
-    </footer>
+    </footer> -->
+    </div>
   </aside>
   
