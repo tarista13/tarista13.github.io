@@ -71,3 +71,14 @@ footer {
     margin-left: 9%;
     margin-right: 9%;
 }
+
+@media (max-width: 900px) {
+  aside {
+    width: 95%;
+    float: none;
+    height: auto;
+    margin: 0 auto 20px auto;
+    padding: 15px;
+    border-radius: 6px;
+  }
+}

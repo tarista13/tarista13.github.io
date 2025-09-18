@@ -10,4 +10,10 @@ html, body {
 i, a {
   color: white !important;
 }
+
+@media only screen and (max-width: 900px) {
+  html, body {
+    background: #2c3539 !important;
+  }
+}
   

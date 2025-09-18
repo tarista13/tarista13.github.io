@@ -96,32 +96,91 @@ footer {
     margin-right: 9%;
 }
 
-/* Smart Phones */
 @media only screen and (max-width: 1150px) {
-    section {
-        width: 90%;
-        height: auto;
-        float: none;
-        padding-top: 0;
-        margin: 0 auto;
-        margin-bottom: 20px;
-    }
 
-    aside {
-        width: 90%;
-        float: none;
-        height: auto;
-        margin: 0 auto;
-        padding: 15px;
-    }
+  /* General layout */
+  section, 
+  aside {
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    float: none;
+    height: auto;
+    padding: 15px;
+    box-sizing: border-box;
+  }
 
-    .social-media {
-        /* border: 2px solid green; */
-        bottom: 0 !important;
-        margin-top: 5%;
-    }
+  /* Intro header */
+  .introHeader {
+    margin-top: 50px;
+    text-align: center;
+  }
 
-    .about {
-        text-align: center;
-    }
+  #name {
+    font-size: 1.8rem;
+  }
+
+  #bio {
+    font-size: 1.1rem;
+  }
+
+  /* Navbar */
+  #navbar {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    margin-left: 105px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+  }
+
+  /* Social media icons */
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    position: static; /* no sticky bottom */
+  }
+
+  .social-media a i {
+    font-size: 1.5rem;
+  }
+
+  /* About section */
+  .about {
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  /* Education & experience blocks */
+  .education, 
+  .experience, 
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  /* Project cards */
+  .projects app-project-card,
+  .experience app-job-card,
+  .education app-education {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Resume link / section links */
+  .sectionLinks {
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+  }
 }
