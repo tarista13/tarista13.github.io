@@ -1,55 +1,55 @@
 {
-  "hash": "2d29c7a3",
-  "configHash": "701094ae",
+  "hash": "661904a6",
+  "configHash": "905612f8",
   "lockfileHash": "16fa01b2",
-  "browserHash": "b93d761a",
+  "browserHash": "d9f3c669",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "1d215e82",
+      "fileHash": "5e9a4330",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "e1abcbda",
+      "fileHash": "8e866c68",
       "needsInterop": false
     },
     "@angular/material/card": {
       "src": "../../../../../node_modules/@angular/material/fesm2022/card.mjs",
       "file": "@angular_material_card.js",
-      "fileHash": "8e8514e4",
+      "fileHash": "ecc194f5",
       "needsInterop": false
     },
     "@angular/material/table": {
       "src": "../../../../../node_modules/@angular/material/fesm2022/table.mjs",
       "file": "@angular_material_table.js",
-      "fileHash": "115e87df",
+      "fileHash": "462c8ae4",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "98c251c0",
+      "fileHash": "0e193bf8",
       "needsInterop": false
     },
     "@angular/platform-browser/animations/async": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/animations/async.mjs",
       "file": "@angular_platform-browser_animations_async.js",
-      "fileHash": "e073fe7f",
+      "fileHash": "ed5982bb",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "49aa38ab",
+      "fileHash": "4130966f",
       "needsInterop": false
     },
     "ag-grid-angular": {
       "src": "../../../../../node_modules/ag-grid-angular/fesm2022/ag-grid-angular.mjs",
       "file": "ag-grid-angular.js",
-      "fileHash": "00e5ce77",
+      "fileHash": "e68ac2c5",
       "needsInterop": false
     }
   },
