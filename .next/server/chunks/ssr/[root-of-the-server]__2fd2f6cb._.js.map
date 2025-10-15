@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///Users/t_arista/Downloads/Github_Repos/tarista13.github.io/src/app/blog/page.tsx"],"sourcesContent":["export default function Blog(){\n    return(\n        <h1>This is the blog page</h1>\n    )\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACpB,qBACI,8OAAC;kBAAG;;;;;;AAEZ","debugId":null}}]
+}
