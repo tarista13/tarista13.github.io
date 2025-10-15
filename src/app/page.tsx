@@ -104,8 +104,9 @@ export default function Home() {
               title_03="Applications Engineer Associate"
               jobtype_03="Full-time"
               year_03="June 2025 - Present"
-              description_03="Contributing to enterprise software and system solutions, supporting business operation, and enhacing technical
-              workflows while building experience toward long-term software engineering goals."
+              description_03="Supporting the SAP Transportation Management(TM) system. Currently contributing to the company's Business Transformation
+              initiative, migrating from SAP ECC to SAP S/4 HANA. Actively involved in design sessions defining system configurations and workflow logic, 
+              while also performing ABAP development to enhance and maintain business processes."
               title_02="Software Engineer Intern"
               jobtype_02="Internship"
               year_02="May 2024 - June 2025"
@@ -171,7 +172,7 @@ export default function Home() {
               alt="Django Project"
               title="Personal Finance Dashboard" 
               projectType="Personal" 
-              techStack="Next.js, Django Rest Frameworks, Plaid API" 
+              techStack="Next.js, Django, Plaid API" 
               description="A full-stack web app that helps users track spending, savings, and transactions in one place.
               Built with Django, Plaid API, and Recharts, it securely connects to bank accounts and visualizes
               income, expenses, and net worth through interactive charts." />

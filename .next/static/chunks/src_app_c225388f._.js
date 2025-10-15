@@ -763,7 +763,7 @@ function Home() {
                                 title_03: "Applications Engineer Associate",
                                 jobtype_03: "Full-time",
                                 year_03: "June 2025 - Present",
-                                description_03: "Contributing to enterprise software and system solutions, supporting business operation, and enhacing technical workflows while building experience toward long-term software engineering goals.",
+                                description_03: "Supporting the SAP Transportation Management(TM) system. Currently contributing to the company's Business Transformation initiative, migrating from SAP ECC to SAP S/4 HANA. Actively involved in design sessions defining system configurations and workflow logic,  while also performing ABAP development to enhance and maintain business processes.",
                                 title_02: "Software Engineer Intern",
                                 jobtype_02: "Internship",
                                 year_02: "May 2024 - June 2025",
@@ -784,7 +784,7 @@ function Home() {
                                 children: "View Full Resume"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 151,
+                                lineNumber: 152,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -802,7 +802,7 @@ function Home() {
                                 children: "Projects"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 154,
+                                lineNumber: 155,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -817,12 +817,12 @@ function Home() {
                                     description: "This is a web development project that utilizes Angular, NodeJS and Typescript.  The goals of the upcoming year will be to enhance the application with more assessment  functionalities - mother-baby, OBGYN, and pediatrics."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
-                                    lineNumber: 156,
+                                    lineNumber: 157,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 155,
+                                lineNumber: 156,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -833,16 +833,16 @@ function Home() {
                                     alt: "Django Project",
                                     title: "Personal Finance Dashboard",
                                     projectType: "Personal",
-                                    techStack: "Next.js, Django Rest Frameworks, Plaid API",
+                                    techStack: "Next.js, Django, Plaid API",
                                     description: "A full-stack web app that helps users track spending, savings, and transactions in one place. Built with Django, Plaid API, and Recharts, it securely connects to bank accounts and visualizes income, expenses, and net worth through interactive charts."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
-                                    lineNumber: 168,
+                                    lineNumber: 169,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 167,
+                                lineNumber: 168,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -857,12 +857,12 @@ function Home() {
                                     description: "An AI web app that analyzes resumes and provides feedback on clarity, structure, and job relevance. Built with React and google Gemini, it uses NLP and prompt engineering to generate tailored suggestions that improve  each."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
-                                    lineNumber: 190,
+                                    lineNumber: 191,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 189,
+                                lineNumber: 190,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -877,12 +877,12 @@ function Home() {
                                     description: "Designed and implemented a Gui-based Python application that allows  the user to play a brick breaker game that implements a file-based leaderboard."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
-                                    lineNumber: 202,
+                                    lineNumber: 203,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 201,
+                                lineNumber: 202,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -890,13 +890,13 @@ function Home() {
                                 children: "View Full Project Archieve"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 212,
+                                lineNumber: 213,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 153,
+                        lineNumber: 154,
                         columnNumber: 9
                     }, this)
                 ]
