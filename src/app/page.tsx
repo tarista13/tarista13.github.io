@@ -63,7 +63,7 @@ export default function Home() {
             <a href="mailto:tylerarista@gmail.com" target="_blank" className="m-[15%]" style={{color:'white'}}><IoIosMail /></a>
           </footer>
       </section>
-      <aside className="rounded-[5px] pl[12%] pr-[12%] float-right h-screen box-border overflow-y-auto">
+      <aside className="rounded-[5px] pl-[12%] pr-[12%] float-right h-screen box-border overflow-y-auto">
         <div ref={aboutRef} id="about" className="m-[9%]">
           {/* <p>I’m a Computer Science graduate with a Minor in Data Science from Calvin University (May 2025), 
             currently working as an Applications Engineer Associate at Steelcase. I’m passionate about full-stack development, 
@@ -190,7 +190,7 @@ export default function Home() {
           <div id="resume">
             <ProjectCard 
               link="https://github.com/tarista13/resume_analyzer"
-              image="/resume_asnalyzer.png"
+              image="/resume_analyzer.png"
               alt="Resume Analyzer Django Project"
               title="AI-Powered Resume Critic" 
               projectType="Personal" 
