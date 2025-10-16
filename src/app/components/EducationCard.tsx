@@ -20,7 +20,7 @@ export default function EducationCard({
 }: EducationCardProps) {
   return (
     <Card className="bg-transparent text-white p-4">
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-6 education-card">
         <div className="relative w-[200px] h-[200px] flex-shrink-0 self-center">
           <Image
             src={image}

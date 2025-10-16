@@ -44,7 +44,7 @@ export default function SteelcaseJobCard({
 }: JobCardProps) {
   return (
     <Card className="bg-transparent text-white p-6 rounded-xl shadow-md">
-  <div className="flex items-start gap-6">
+  <div className="flex items-start gap-6 steelcase-card">
     <div className="relative w-[200px] h-[120px] flex-shrink-0 rounded-lg overflow-hidden">
       <Image
         src={image}

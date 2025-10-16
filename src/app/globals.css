@@ -47,11 +47,7 @@ svg {
   vertical-align: middle;
 }
 
-@media (hover: none) {
-  a { -webkit-tap-highlight-color: transparent; }
-}
-
-@media (max-width: 640px) {
+@media (max-width: 480px) {
   #entirePage {
     display: grid;
     grid-template-columns: 1fr !important;
@@ -171,4 +167,57 @@ svg {
 @media (max-width: 360px) {
   #name { font-size: clamp(26px, 9vw, 36px) !important; }
   #social { font-size: 24px !important; gap: 14px; }
+}
+
+@media (max-width: 480px) {
+  .education-card
+  .steelcase-card
+  .project-card {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 16px !important;
+  }
+
+  .education-card
+  .education-card
+  .steelcase-card
+  .project-card
+  .relative {
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+  .education-card
+  .education-card
+  .steelcase-card
+  .project-card
+  .card-body {
+    padding: 0 !important;
+  }
+
+  .education-card 
+  .education-card
+  .steelcase-card
+  .project-card
+  .card-title {
+    font-size: 18px !important;
+  }
+
+  .education-card 
+  .education-card
+  .steelcase-card
+  .project-card
+  .card-subtitle {
+    font-size: 14px !important;
+  }
+
+  .education-card 
+  .education-card
+  .steelcase-card
+  .project-card
+  .card-text {
+    font-size: 14px !important;
+    line-height: 1.5;
+  }
 }

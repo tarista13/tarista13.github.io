@@ -24,7 +24,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <a href={link} style={{textDecoration: "None"}} target="_blank">
-        <Card className="bg-transparent text-white p-4">
+        <Card className="bg-transparent text-white p-4 project-card">
             <div className="flex items-center gap-6">
                 <div className="relative w-[200px] h-[200px] flex-shrink-0 self-center">
                 <Image
