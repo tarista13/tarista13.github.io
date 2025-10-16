@@ -1097,15 +1097,6 @@ body {
   color: #fff !important;
 }
 
-@supports (padding: max(0px)) {
-  body {
-    padding-left: max(0px, env(safe-area-inset-left));
-    padding-right: max(0px, env(safe-area-inset-right));
-    padding-top: max(0px, env(safe-area-inset-top));
-    padding-bottom: max(0px, env(safe-area-inset-bottom));
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -1115,9 +1106,15 @@ html {
   --mobile-gap: 14px;
 }
 
-img, svg, video, canvas {
+img, video, canvas {
   max-width: 100%;
   height: auto;
+}
+
+svg {
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
 }
 
 @media (hover: none) {
@@ -1128,30 +1125,38 @@ img, svg, video, canvas {
 
 @media (max-width: 640px) {
   #entirePage {
-    gap: var(--mobile-gap);
     grid-auto-rows: auto;
+    gap: 14px;
     min-height: 100dvh;
     display: grid;
     grid-template-columns: 1fr !important;
   }
 
   #entirePage > section {
-    padding: var(--mobile-padding) !important;
-    padding-top: calc(var(--mobile-padding)  + 8px) !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    display: flex;
     float: none !important;
     height: auto !important;
     margin: 0 !important;
+    padding: 24px 16px 16px !important;
   }
 
   #name {
     line-height: 1.15;
-    margin-bottom: 8px !important;
+    margin-bottom: 6px !important;
     font-size: max(28px, min(8vw, 42px)) !important;
   }
 
   .intro h3 {
     opacity: .9;
     font-size: max(14px, min(4.2vw, 18px));
+  }
+
+  #entirePage > section .flex.flex-col {
+    width: 100%;
+    max-width: 520px;
   }
 
   #entirePage > section .flex.flex-col a {
@@ -1169,10 +1174,14 @@ img, svg, video, canvas {
   }
 
   #social {
+    color: #fff;
+    justify-content: center;
+    align-items: center;
     gap: 18px;
-    margin-top: 24px !important;
-    margin-bottom: 0 !important;
+    width: 100%;
+    margin-top: 12px !important;
     font-size: 26px !important;
+    display: flex !important;
   }
 
   #social a {
@@ -1181,13 +1190,13 @@ img, svg, video, canvas {
     width: 44px;
     height: 44px;
     display: grid;
-    margin: 0 !important;
+    color: inherit !important;
   }
 
   #entirePage > aside {
-    padding: var(--mobile-padding) !important;
     float: none !important;
     height: auto !important;
+    padding: 16px !important;
     overflow: visible !important;
   }
 
