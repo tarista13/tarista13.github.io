@@ -190,7 +190,7 @@ export default function Home() {
           <div id="resume">
             <ProjectCard 
               link="https://github.com/tarista13/resume_analyzer"
-              image="/resume_Analyzer.png"
+              image="/resume_asnalyzer.png"
               alt="Resume Analyzer Django Project"
               title="AI-Powered Resume Critic" 
               projectType="Personal" 
