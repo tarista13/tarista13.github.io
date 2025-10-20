@@ -199,8 +199,12 @@
   :root, :host {
     --color-gray-300: #d1d5dc;
     --color-gray-400: #99a1af;
+    --color-gray-500: #6a7282;
+    --color-gray-700: #364153;
     --color-white: #fff;
     --spacing: .25rem;
+    --text-xs: .75rem;
+    --text-xs--line-height: calc(1 / .75);
     --text-sm: .875rem;
     --text-sm--line-height: calc(1.25 / .875);
     --text-lg: 1.125rem;
@@ -209,6 +213,7 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --leading-relaxed: 1.625;
@@ -228,6 +233,8 @@
     :root, :host {
       --color-gray-300: color(display-p3 .822033 .835264 .858521);
       --color-gray-400: color(display-p3 .605734 .630385 .680158);
+      --color-gray-500: color(display-p3 .421287 .446085 .504784);
+      --color-gray-700: color(display-p3 .219968 .253721 .318679);
     }
   }
 
@@ -235,6 +242,8 @@
     :root, :host {
       --color-gray-300: lab(85.1236% -.612259 -3.7138);
       --color-gray-400: lab(65.9269% -.832707 -8.17473);
+      --color-gray-500: lab(47.7841% -.393182 -10.0268);
+      --color-gray-700: lab(27.1134% -.956401 -12.3224);
     }
   }
 }
@@ -810,6 +819,10 @@
     flex-direction: row;
   }
 
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .items-center {
     align-items: center;
   }
@@ -828,6 +841,14 @@
 
   .gap-1 {
     gap: calc(var(--spacing) * 1);
+  }
+
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
   }
 
   .gap-6 {
@@ -866,6 +887,10 @@
     border-radius: 5px;
   }
 
+  .rounded-full {
+    border-radius: 3.40282e38px;
+  }
+
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -900,6 +925,14 @@
     border-color: #e0e0e0;
   }
 
+  .bg-\[\#222\] {
+    background-color: #222;
+  }
+
+  .bg-gray-700 {
+    background-color: var(--color-gray-700);
+  }
+
   .bg-transparent {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -926,6 +959,14 @@
 
   .p-\[0\] {
     padding: 0;
+  }
+
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
 
   .pt-\[12\%\] {
@@ -972,6 +1013,11 @@
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
 
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+
   .text-\[30px\] {
     font-size: 30px;
   }
@@ -990,6 +1036,11 @@
     font-weight: var(--font-weight-bold);
   }
 
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
@@ -1005,6 +1056,10 @@
 
   .text-gray-400 {
     color: var(--color-gray-400);
+  }
+
+  .text-gray-500 {
+    color: var(--color-gray-500);
   }
 
   .text-white {
@@ -1101,152 +1156,21 @@ html {
   scroll-behavior: smooth;
 }
 
-:root {
-  --mobile-padding: 16px;
-  --mobile-gap: 14px;
-}
-
-img, video, canvas {
-  max-width: 100%;
-  height: auto;
-}
-
-svg {
-  vertical-align: middle;
-  width: 1em;
-  height: 1em;
-}
-
-@media (hover: none) {
-  a {
-    -webkit-tap-highlight-color: transparent;
-  }
-}
-
-@media (max-width: 640px) {
+@media only screen and (min-device-width: 390px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   #entirePage {
-    grid-auto-rows: auto;
-    gap: 14px;
-    min-height: 100dvh;
+    grid-template-columns: 1fr;
     display: grid;
-    grid-template-columns: 1fr !important;
   }
 
-  #entirePage > section {
+  #social {
+    border: 2px solid red;
+    gap: 0;
+    margin: 1px;
+  }
+
+  #cardImage {
     flex-direction: column;
-    align-items: center;
-    gap: 12px;
     display: flex;
-    float: none !important;
-    height: auto !important;
-    margin: 0 !important;
-    padding: 24px 16px 16px !important;
-  }
-
-  #name {
-    line-height: 1.15;
-    margin-bottom: 6px !important;
-    font-size: max(28px, min(8vw, 42px)) !important;
-  }
-
-  .intro h3 {
-    opacity: .9;
-    font-size: max(14px, min(4.2vw, 18px));
-  }
-
-  #entirePage > section .flex.flex-col {
-    width: 100%;
-    max-width: 520px;
-  }
-
-  #entirePage > section .flex.flex-col a {
-    text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, .08);
-    margin: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    line-height: 1.3;
-    display: block;
-  }
-
-  #entirePage > section .flex.flex-col a:last-child {
-    border-bottom: none;
-  }
-
-  #social {
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    gap: 18px;
-    width: 100%;
-    margin-top: 12px !important;
-    font-size: 26px !important;
-    display: flex !important;
-  }
-
-  #social a {
-    border-radius: 10px;
-    place-items: center;
-    width: 44px;
-    height: 44px;
-    display: grid;
-    color: inherit !important;
-  }
-
-  #entirePage > aside {
-    float: none !important;
-    height: auto !important;
-    padding: 16px !important;
-    overflow: visible !important;
-  }
-
-  #about, #education, #experience, #projects, #blog {
-    margin: 18px 0 !important;
-  }
-
-  #about p {
-    font-size: 15px;
-    line-height: 1.65;
-  }
-
-  #education h2, #experience h2, #projects h1, #blog h1 {
-    margin-bottom: 8px;
-    font-size: max(20px, min(6vw, 26px));
-    line-height: 1.25;
-  }
-
-  #experience a, #projects a {
-    margin-top: 8px;
-    font-size: 15px;
-    text-decoration: underline;
-    display: inline-block;
-  }
-
-  [class*="w-[200px]"], [class*="w-[250px]"], [class*="h-[120px]"], [class*="h-[160px]"] {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  .card-text, .Card__text, .project-card p, #projects p {
-    font-size: 15px;
-    line-height: 1.6;
-  }
-
-  a:focus-visible {
-    outline-offset: 2px;
-    border-radius: 8px;
-    outline: 3px solid rgba(180, 200, 255, .85);
-  }
-}
-
-@media (max-width: 360px) {
-  #name {
-    font-size: max(26px, min(9vw, 36px)) !important;
-  }
-
-  #social {
-    gap: 14px;
-    font-size: 24px !important;
   }
 }
 

@@ -23,7 +23,8 @@ export default function Home() {
 
   return (
     <div id="entirePage" className="grid grid-cols-2">
-        <section className="ml-[15%] mr-[15%] p-[0] pt-[12%]  h-[24%] float-left box-border justify-items-center">
+        <section id="leftSection" className="ml-[15%] mr-[15%] p-[0] pt-[12%]  h-[24%] float-left box-border 
+                                            justify-items-center">
           <div className="intro">
             <h1 id="name" className="mt-[25px] text-[60px] text-center font-bold mb-[20px]">Tyler Arista</h1>
             <h3 className="text-center">Applications Engineer @Steelcase</h3>
@@ -55,15 +56,26 @@ export default function Home() {
               );
             }}>Blog</a>
           </div>
-          <footer id="social" className="flex flex-row justify-center items-center mt-[45%] m-[15px] text-[30px]" style={{flex:"row"}}>
-            <a href="https://github.com/tarista13" target="_blank" className="m-[15%]" style={{color:'white'}}><FaGithub/></a>
-            <a href="https://www.linkedin.com/in/tyler-arista/" target="_blank" className="m-[15%]" style={{color:'white'}}><FaLinkedin/></a>
-            <a href="https://www.instagram.com/t_arista13/" target="_blank" className="m-[15%]" style={{color:'white'}}><FaInstagram/></a>
-            <a href="https://twitter.com/t_arista13" target="_blank" className="m-[15%]" style={{color:'white'}}><FaSquareXTwitter/></a>
-            <a href="mailto:tylerarista@gmail.com" target="_blank" className="m-[15%]" style={{color:'white'}}><IoIosMail /></a>
+          <footer id="social" className="flex flex-row justify-center items-center gap-4 mt-[45%] text-[30px]">
+            <a href="https://github.com/tarista13" target="_blank" className="text-white">
+              <FaGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/tyler-arista/" target="_blank" className="text-white">
+              <FaLinkedin />
+            </a>
+            <a href="https://www.instagram.com/t_arista13/" target="_blank" className="text-white">
+              <FaInstagram />
+            </a>
+            <a href="https://twitter.com/t_arista13" target="_blank" className="text-white">
+              <FaSquareXTwitter />
+            </a>
+            <a href="mailto:tylerarista@gmail.com" target="_blank" className="text-white">
+              <IoIosMail />
+            </a>
           </footer>
       </section>
-      <aside className="rounded-[5px] pl-[12%] pr-[12%] float-right h-screen box-border overflow-y-auto">
+      <aside id="rightAside" className="rounded-[5px] pl-[12%] pr-[12%] float-right 
+                                        h-screen box-border overflow-y-auto">
         <div ref={aboutRef} id="about" className="m-[9%]">
           {/* <p>I’m a Computer Science graduate with a Minor in Data Science from Calvin University (May 2025), 
             currently working as an Applications Engineer Associate at Steelcase. I’m passionate about full-stack development, 

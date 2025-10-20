@@ -19,8 +19,8 @@ export default function EducationCard({
   relevantCourses,
 }: EducationCardProps) {
   return (
-    <Card className="bg-transparent text-white p-4">
-      <div className="flex items-center gap-6 education-card">
+    <Card id="entireCard" className="bg-transparent text-white p-4">
+      <div id="cardImage" className="flex items-center gap-6 education-card">
         <div className="relative w-[200px] h-[200px] flex-shrink-0 self-center">
           <Image
             src={image}
@@ -29,7 +29,7 @@ export default function EducationCard({
             className="object-contain rounded-md"
           />
         </div>
-        <Card.Body className="p-0">
+        <Card.Body id="cardDetails" className="p-0">
           <Card.Title className="text-xl font-semibold">{school}</Card.Title>
           <Card.Subtitle className="mb-2 text-gray-400">{major}</Card.Subtitle>
           <Card.Text className="text-sm leading-relaxed">
