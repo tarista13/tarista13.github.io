@@ -12,6 +12,7 @@ import EducationCard from "./components/EducationCard";
 import SteelcaseJobCard from "./components/SteelcaseJobCard";
 import ProjectCard from "./components/ProjectCard";
 // import BlogCard from "./components/BlogCard";
+//Comment
 
 export default function Home() {
 
