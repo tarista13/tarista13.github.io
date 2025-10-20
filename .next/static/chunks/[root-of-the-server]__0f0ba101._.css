@@ -679,14 +679,6 @@
     margin: 9%;
   }
 
-  .m-\[15\%\] {
-    margin: 15%;
-  }
-
-  .m-\[15px\] {
-    margin: 15px;
-  }
-
   .mt-\[5\%\] {
     margin-top: 5%;
   }
@@ -837,10 +829,6 @@
 
   .justify-items-center {
     justify-items: center;
-  }
-
-  .gap-1 {
-    gap: calc(var(--spacing) * 1);
   }
 
   .gap-2 {
@@ -1157,15 +1145,39 @@ html {
 }
 
 @media only screen and (min-device-width: 390px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  html, body {
+    scroll-behavior: smooth;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
   #entirePage {
-    grid-template-columns: 1fr;
-    display: grid;
+    display: block;
+    overflow: visible;
+    height: auto !important;
+  }
+
+  #leftSection {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10% 5%;
+    float: none !important;
+    height: auto !important;
+    position: static !important;
   }
 
   #social {
-    border: 2px solid red;
     gap: 0;
     margin: 1px;
+  }
+
+  #rightAside {
+    box-sizing: border-box;
+    padding: 8% 6%;
+    height: auto !important;
+    position: static !important;
+    overflow: visible !important;
   }
 
   #cardImage {

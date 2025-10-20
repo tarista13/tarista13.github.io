@@ -39,19 +39,30 @@ html {
   and (orientation: portrait) {
 
     /*Entire Page Styling*/
+    html,
     body {
       /* color: green !important;  */
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      scroll-behavior: smooth;
     }
 
     #entirePage {
-      display: grid;
-      grid-template-columns: 1fr;
+      display: block;
+      height: auto !important;
+      overflow: visible;
     }
 
     /*Left Side Styling*/
 
     #leftSection {
-      /* border: 2px solid red; */
+      position: static !important;
+      float: none !important;
+      height: auto !important;
+      margin: 0 auto;
+      padding: 10% 5%;
+      box-sizing: border-box;
     }
 
     #social {
@@ -62,7 +73,11 @@ html {
 
     /*Right Side Styling*/
     #rightAside {
-
+      position: static !important;
+      height: auto !important;
+      overflow: visible !important;
+      padding: 8% 6%;
+      box-sizing: border-box;
     }
 
     #entireCard {
