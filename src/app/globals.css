@@ -65,6 +65,10 @@ html {
       box-sizing: border-box;
     }
 
+    #sections {
+      margin-bottom: 15%;
+    }
+
     #social {
       margin-top: 45%;
       margin: 1px;

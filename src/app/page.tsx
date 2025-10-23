@@ -30,7 +30,7 @@ export default function Home() {
             <h1 id="name" className="mt-[25px] text-[60px] text-center font-bold mb-[20px]">Tyler Arista</h1>
             <h3 className="text-center">Applications Engineer @Steelcase</h3>
           </div>
-          <div className="flex flex-col mt-[20%] items-center">
+          <div id="sections" className="flex flex-col mt-[20%] items-center">
             <a onClick={() => {
               aboutRef.current?.scrollIntoView(
                 {behavior: "smooth"}
@@ -86,16 +86,18 @@ export default function Home() {
             Architecture, Artificial Intelligence, and Machine Learning. With hands-on experience in Python, C#, JavaScript, 
             and Agile methodologies, I’m a dedicated learner and problem-solver eager to continue developing my expertise in 
             modern software development practices.</p> */}
-            <p>Hi, I&#39;m Tyler, a Computer Science graduate with a minor in Data Science from Calvin University
-               and currently an Applications Engineer Associate at Steelcase.<br/>
-              <br/>
-               I&#39;m passionate about building modern, data-driven web applications that merge clean design
-               with powerful functionality. I work primarily with React, Next.js, Django, and C#, creating tools
-               that are intuitive, efficient, and impactful.<br/>
-              <br/>
-                I enjoy tackling complex problems, learning new technologies, and collaborating with others to turn 
-                ideas into real, working solutions. My goal is to continue growing into a Software Engineering role
-                where I can design and deliver systems that make a meaningful difference.
+            <p>
+              Hi, I&#39;m Tyler, a Computer Science graduate with a minor in Data Science from Calvin University
+              and currently an Applications Engineer Associate at Steelcase.<br/><br/>
+              
+              I’m passionate about creating modern, data-driven web applications that bring together clean design and strong engineering. 
+              I work primarily with React, Next.js, Django, and C#, developing tools that are efficient, intuitive, and built to make an impact.<br/><br/>
+              
+              I love taking on complex challenges, learning new technologies, and collaborating with others to turn ideas into practical solutions. 
+              My goal is to continue growing as a Software Engineer — designing and delivering systems that are both meaningful and reliable.<br/><br/>
+              
+              Outside of work, I’m always exploring new ways to combine sports and technology — analyzing baseball data, automating workflows, 
+              or experimenting with new ideas that blend code, creativity, and curiosity.
             </p>
         </div>
         <div ref={educationRef} id="education" className="">
@@ -109,7 +111,7 @@ export default function Home() {
         </div>
         <div ref={experienceRef} id="experience" className="mt-[5%]">
           <h2>Experience</h2>
-          <SteelcaseJobCard 
+          <SteelcaseJobCard
               company="Steelcase"
               location="Grand Rapids, MI"
               image="/steelcaseLogo.png"
@@ -130,38 +132,7 @@ export default function Home() {
               year_01="May 2023 - Aug 2023"
               description_01="Implemented a new Password Protection standard for a company with 12,700 employees, reducing security breaches from
               compromised passwords. Collaborated with the AppSec engineer to review application vulnerabilities using Checkmarx."
-
             />
-          {/* <div className="mt-[5px]">
-            <JobCard
-              title="Applications Enginner Associate" 
-              company="Steelcase"
-              image="/steelcaseLogo.png"
-              alt="Steelcase Logo"
-              year="June 2025 - Present" 
-              description="Contributing to enterprise software and system solutions, supporting business operation, and enhacing technical
-              workflows while building experience toward long-term software engineering goals."/>
-          </div>
-          <div className="mt-[15px]">
-            <JobCard 
-              title="Software Engineer Intern"
-              company="Steelcase"
-              alt="Steelcase Logo"
-              image="/steelcaseLogo.png"
-              year="May 2024 - June 2025"
-              description="Collaborated on developing a new quoting application for customized products, improving frontend user
-              experience and backend data management to streamline orders and strengthen product workflows."></JobCard>
-          </div>
-          <div className="">
-            <JobCard 
-              title="CyberSecurity Intern"
-              company="Steelcase"
-              image="/steelcaseLogo.png"
-              alt="Steelcase Logo"
-              year="May 2023 - Aug 2023"
-              description="Implemented a new Password Protection standard for a company with 12,700 employees, reducing security breaches from
-              compromised passwords. Collaborated with the AppSec engineer to review application vulnerabilities using Checkmarx."></JobCard>
-          </div> */}
           <a href="./resume/Arista_Tyler(Post Grad May 2025).pdf" target="_blank" className="text-white">View Full Resume</a>
         </div>
         <div ref={projectsRef} id="projects" className="pb-[5%] mt-[5%]">

@@ -43,7 +43,7 @@ export default function SteelcaseJobCard({
   description_03
 }: JobCardProps) {
   return (
-    <Card className="bg-transparent text-white p-6 rounded-xl shadow-md">
+    <Card className="bg-transparent text-white p-6 rounded-xl shadow-md mb-[10px]">
     <div id="cardImage" className="flex items-start gap-6 steelcase-card">
       <div className="relative w-[200px] h-[120px] flex-shrink-0 rounded-lg overflow-hidden">
         <Image
