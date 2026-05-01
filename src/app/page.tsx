@@ -161,7 +161,7 @@ export default function Home() {
           <h2 className="text-2xl font-semibold sm:text-3xl">About</h2>
           <p>
             Hi, my name is Tyler &#38; I&#39;m an Applications Engineer who
-            enjoys solving problems, building software, and creating tools that
+            enjoys building software, solving problems, and creating tools that
             make work easier.
           </p>
           <p>
@@ -182,11 +182,11 @@ export default function Home() {
           {/* I&#39;ve learned that the best
             solutions come from listening carefully, asking the right questions,
             and communicating clearly across both technical &#38; non-technical teams. */}
-          <p>
+          {/* <p>
             Today, I enjoy learning how different organizations work,
             understanding their challenges, and using technology to create
             practical solutions that make a real impact.
-          </p>
+          </p> */}
           <p>
             Outside of work, I enjoy running, cooking, listening to music,
             traveling &#38; keeping up with the Chicago Cubs &#38; Bears.
@@ -235,7 +235,7 @@ export default function Home() {
               compromised passwords. Collaborated with the AppSec engineer to review application vulnerabilities using Checkmarx."
           />
           <a
-            href="./resume/Arista_Tyler(April 2026).pdf"
+            href="./resume/Arista_Tyler(May 2026).pdf"
             target="_blank"
             className="inline-block text-sm text-white underline-offset-4 transition hover:underline sm:text-base"
           >
