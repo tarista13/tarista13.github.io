@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,6 +25,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="preload"
+          href="/_next/static/media/730e8169368baf37-s.p.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+          data-next-font="size-adjust"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning

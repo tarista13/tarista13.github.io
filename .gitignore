@@ -1,1 +1,7 @@
 node_modules/
+.angular/
+.next/
+out/
+build/
+dist/
+tsconfig.tsbuildinfo

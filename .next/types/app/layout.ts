@@ -1,4 +1,4 @@
-// File: /Users/t_arista/Downloads/Github_Repos/tarista13.github.io/src/app/layout.tsx
+// File: /Users/t_arista/Downloads/Github_Repos/new_projects/tarista13.github.io/src/app/layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

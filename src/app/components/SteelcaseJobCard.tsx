@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 
 interface JobCardProps {
@@ -43,9 +42,9 @@ export default function SteelcaseJobCard({
   description_03
 }: JobCardProps) {
   return (
-    <Card className="bg-transparent text-white p-6 rounded-xl shadow-md mb-[10px]">
-    <div id="cardImage" className="flex items-start gap-6 steelcase-card">
-      <div className="relative w-[200px] h-[120px] flex-shrink-0 rounded-lg overflow-hidden">
+    <Card className="mb-[10px] rounded-xl bg-transparent p-4 text-white shadow-md sm:p-6">
+    <div id="cardImage" className="flex flex-col items-center gap-6 steelcase-card sm:flex-row sm:items-start">
+      <div className="relative h-[100px] w-full max-w-[260px] flex-shrink-0 overflow-hidden rounded-lg sm:h-[110px] sm:w-[180px] sm:max-w-none lg:h-[120px] lg:w-[200px]">
         <Image
           src={image}
           alt={alt}
@@ -54,52 +53,52 @@ export default function SteelcaseJobCard({
         />
       </div>
 
-      <Card.Body className="p-0 space-y-4">
-        <Card.Title className="text-3xl font-semibold mb-2">
-          {company} <span className="text-gray-400">| {location}</span>
+      <Card.Body className="w-full space-y-4 p-0 text-left">
+        <Card.Title className="mb-2 text-2xl font-semibold sm:text-3xl">
+          {company} <span className="block text-lg text-gray-400 sm:inline sm:text-inherit">| {location}</span>
         </Card.Title>
 
         <div id="position_03" className="border-l-4 border-[#E0E0E0] pl-4">
-          <Card.Title className="text-xl font-semibold mb-1">
+          <Card.Title className="mb-1 text-lg font-semibold sm:text-xl">
             {title_03}
           </Card.Title>
-          <Card.Subtitle className="text-lg mb-1 text-gray-300">
+          <Card.Subtitle className="mb-1 text-base text-gray-300 sm:text-lg">
             {jobtype_03}
           </Card.Subtitle>
           <Card.Subtitle className="text-sm mb-2 text-gray-400">
             {year_03}
           </Card.Subtitle>
-          <Card.Text className="text-sm leading-relaxed text-gray-300">
+          <Card.Text className="text-sm leading-relaxed text-gray-300 sm:text-base">
             {description_03}
           </Card.Text>
         </div>
 
         <div id="position_02" className="border-l-4 border-[#8B8B8B] pl-4">
-          <Card.Title className="text-xl font-semibold mb-1">
+          <Card.Title className="mb-1 text-lg font-semibold sm:text-xl">
             {title_02}
           </Card.Title>
-          <Card.Subtitle className="text-lg mb-1 text-gray-300">
+          <Card.Subtitle className="mb-1 text-base text-gray-300 sm:text-lg">
             {jobtype_02}
           </Card.Subtitle>
           <Card.Subtitle className="text-sm mb-2 text-gray-400">
             {year_02}
           </Card.Subtitle>
-          <Card.Text className="text-sm leading-relaxed text-gray-300">
+          <Card.Text className="text-sm leading-relaxed text-gray-300 sm:text-base">
             {description_02}
           </Card.Text>
         </div>
 
         <div id="position_01" className="border-l-4 border-[#5F5F5F] pl-4">
-          <Card.Title className="text-xl font-semibold mb-1">
+          <Card.Title className="mb-1 text-lg font-semibold sm:text-xl">
             {title_01}
           </Card.Title>
-          <Card.Subtitle className="text-lg mb-1 text-gray-300">
+          <Card.Subtitle className="mb-1 text-base text-gray-300 sm:text-lg">
             {jobtype_01}
           </Card.Subtitle>
           <Card.Subtitle className="text-sm mb-2 text-gray-400">
             {year_01}
           </Card.Subtitle>
-          <Card.Text className="text-sm leading-relaxed text-gray-300">
+          <Card.Text className="text-sm leading-relaxed text-gray-300 sm:text-base">
             {description_01}
           </Card.Text>
         </div>
