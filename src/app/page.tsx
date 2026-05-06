@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import { useRef } from "react";
+import { Analytics } from "@vercel/analytics/next";
 
 import EducationCard from "./components/EducationCard";
 // import JobCard from "./components/JobCard";
@@ -302,6 +303,7 @@ export default function Home() {
           <a href="/blog">View rest of blogs</a>
         </div> */}
       </aside>
+      <Analytics />
     </div>
   );
 }
