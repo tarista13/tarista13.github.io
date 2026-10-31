@@ -1,58 +1,86 @@
 import React from "react";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
+import { FiArrowUpRight, FiGithub } from "react-icons/fi";
+import Tag from "./Tag";
+import type { Project } from "../content";
 
-interface ProjectCardProps {
-  link: string;
-  image: string;
-  alt: string;
-  title: string;
-  projectType: string;
-  techStack: string;
-  description: string;
+function initials(title: string) {
+  return title
+    .split(" ")
+    .slice(0, 2)
+    .map((word) => word[0])
+    .join("");
 }
 
-export default function ProjectCard({
-  link,
-  image,
-  alt,
-  title,
-  projectType,
-  techStack,
-  description,
-}: ProjectCardProps) {
-  return (
-    <a href={link} style={{textDecoration: "None"}} target="_blank">
-        <Card className="mt-4 bg-transparent p-3 text-white transition-transform duration-200 hover:-translate-y-1 project-card sm:p-4">
-            <div id="cardImage" className="flex flex-col items-center gap-5 sm:flex-row sm:items-center sm:gap-6">
-                <div className="relative h-[160px] w-full max-w-[280px] flex-shrink-0 self-center overflow-hidden rounded-lg sm:h-[180px] sm:w-[180px] sm:max-w-none lg:h-[200px] lg:w-[200px]">
-                <Image
-                    src={image}
-                    alt={alt}
-                    fill
-                    className="object-contain rounded-md"
-                />
-                </div>
-                <Card.Body className="w-full p-0 text-left">
-                <Card.Title className="text-xl font-semibold sm:text-2xl">{title}</Card.Title>
-                {/* <div className="flex items-center gap-2 mb-2 text-sm">
-                  <span className="text-gray-300 font-medium">{projectType}</span>
-                  <span className="text-gray-500">|</span>
-                  <span className="text-[#b7b3b3]">{techStack}</span>
-                </div> */}
-                <div className="mb-2 flex flex-wrap justify-start gap-2 text-xs">
-                  <span className="bg-gray-700 text-white px-2 py-1 rounded-full">{projectType}</span>
-                  <span className="bg-[#222] text-white px-2 py-1 rounded-full">{techStack}</span>
-                </div>
+export default function ProjectCard({ project }: { project: Project }) {
+  const { title, type, techStack, description, image, imageAlt, imageFit, links } =
+    project;
+  // With a single link the whole card can be the click target; with several, each link stands alone.
+  const stretchLink = links.length === 1;
 
-                {/* <Card.Text>{projectType}</Card.Text>
-                <Card.Text>{techStack}</Card.Text> */}
-                <Card.Text className="text-sm leading-relaxed text-gray-200 sm:text-base">
-                    {description}
-                </Card.Text>
-                </Card.Body>
-            </div>
-        </Card>
-    </a>
+  return (
+    <article
+      className={`group relative flex min-w-0 flex-col overflow-hidden rounded-2xl border border-line bg-surface transition duration-200 hover:border-white/25 motion-safe:hover:-translate-y-0.5 ${
+        stretchLink ? "focus-within:border-white/40" : ""
+      }`}
+    >
+      <div className="relative aspect-video border-b border-line bg-black">
+        {image ? (
+          <Image
+            src={image}
+            alt={imageAlt ?? title}
+            fill
+            sizes="(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw"
+            className={imageFit === "contain" ? "object-contain" : "object-cover object-top"}
+          />
+        ) : (
+          <div
+            aria-hidden="true"
+            className="flex h-full items-center justify-center bg-surface-raised"
+          >
+            <span className="font-mono text-4xl font-semibold text-accent">
+              {initials(title)}
+            </span>
+          </div>
+        )}
+      </div>
+
+      <div className="flex flex-1 flex-col p-5">
+        <p className="font-mono text-xs tracking-wider text-muted uppercase">
+          {type}
+        </p>
+        <h3 className="mt-1 text-lg font-semibold text-white">{title}</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted">{description}</p>
+
+        <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Tech stack">
+          {techStack.map((tech) => (
+            <Tag key={tech} accent>
+              {tech}
+            </Tag>
+          ))}
+        </ul>
+
+        <div className="mt-auto flex flex-wrap gap-2 pt-5">
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${title} – ${link.label === "Live" ? "live site" : "GitHub repository"} (opens in new tab)`}
+              className={`inline-flex items-center gap-1.5 rounded-lg border border-line-strong px-3 py-1.5 text-sm font-medium text-ink transition-colors group-hover:border-white/60 group-hover:text-white ${
+                stretchLink ? "after:absolute after:inset-0 after:content-['']" : ""
+              }`}
+            >
+              {link.label === "GitHub" ? (
+                <FiGithub aria-hidden="true" />
+              ) : null}
+              {link.label}
+              <FiArrowUpRight aria-hidden="true" />
+            </a>
+          ))}
+        </div>
+      </div>
+    </article>
   );
 }

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <clipPath id="tile"><rect width="64" height="64" rx="14"/></clipPath>
+  <g clip-path="url(#tile)">
+    <rect width="64" height="64" fill="#0c0c0e"/>
+    <rect width="64" height="6" fill="#ffffff"/>
+  </g>
+  <text x="32" y="43" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="28" font-weight="800" fill="#fafafa">TA</text>
+</svg>

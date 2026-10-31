@@ -1,41 +1,41 @@
 import React from "react";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
+import Tag from "./Tag";
 
 interface EducationCardProps {
   image: string;
-  alt: string;
   school: string;
-  major: string;
-  relevantCourses: string;
+  degree: string;
+  coursework: string[];
 }
 
 export default function EducationCard({
   image,
-  alt,
   school,
-  major,
-  relevantCourses,
+  degree,
+  coursework,
 }: EducationCardProps) {
   return (
-    <Card id="entireCard" className="mt-4 bg-transparent p-3 text-white sm:p-4">
-      <div id="cardImage" className="flex flex-col items-center gap-5 sm:flex-row sm:items-center sm:gap-6 education-card">
-        <div className="relative h-[115px] w-[115px] flex-shrink-0 self-center sm:h-[180px] sm:w-[180px] lg:h-[200px] lg:w-[200px]">
-          <Image
-            src={image}
-            alt={alt}
-            fill
-            className="object-contain rounded-md"
-          />
+    <div>
+      <div className="flex items-center gap-4">
+        <Image
+          src={image}
+          alt="Calvin University Logo"
+          width={56}
+          height={56}
+          className="h-14 w-14 flex-shrink-0 rounded-xl bg-white/[0.04] p-1.5"
+        />
+        <div className="min-w-0">
+          <h3 className="text-lg font-semibold text-white">{school}</h3>
+          <p className="text-sm text-muted">{degree}</p>
         </div>
-        <Card.Body id="cardDetails" className="w-full p-0 text-left">
-          <Card.Title className="text-xl font-semibold sm:text-2xl">{school}</Card.Title>
-          <Card.Subtitle className="mb-2 text-sm text-gray-400 sm:text-base">{major}</Card.Subtitle>
-          <Card.Text className="text-sm leading-relaxed text-gray-200 sm:text-base">
-            {relevantCourses}
-          </Card.Text>
-        </Card.Body>
       </div>
-    </Card>
+      <p className="mt-5 mb-2 text-xs font-medium text-muted">Relevant coursework</p>
+      <ul className="flex flex-wrap gap-1.5">
+        {coursework.map((course) => (
+          <Tag key={course}>{course}</Tag>
+        ))}
+      </ul>
+    </div>
   );
 }
